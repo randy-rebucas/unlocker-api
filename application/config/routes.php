@@ -49,32 +49,42 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
-$route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;
+if(!in_array($_SERVER['REMOTE_ADDR'], $this->config->item('maintenance_ips')) && $this->config->item('maintenance_mode')) {
+	
+    $route['default_controller'] = 'maintenance';
+    $route['(:any)'] = 'maintenance';
+	
+}else{
+    $route['default_controller'] = 'dashboard';
 
-$route['contact'] 							= 'welcome/contact';
-$route['submit-ticket'] 					= 'welcome/submit_ticket';
-$route['testimonial'] 						= 'welcome/testimonial';
-$route['knowledgebase'] 					= 'welcome/knowledgebase';
+    $route['auth'] = 'sessions/login';
+    
+    $route['404_override'] = '';
+    $route['translate_uri_dashes'] = FALSE;
 
-$route['services/(:any)'] 					= 'welcome/services/$1';
-$route['place-order/(:any)'] 				= 'orders/index/$1';
-$route['order-history'] 					= 'orders/history';
+	$route['contact'] 							= 'welcome/contact';
+	$route['submit-ticket'] 					= 'welcome/submit_ticket';
+	$route['testimonial'] 						= 'welcome/testimonial';
+	$route['knowledgebase'] 					= 'welcome/knowledgebase';
 
-$route['item-details/(:any)/(:any)'] 		= 'welcome/item_details/$1/$2';
-//-----------------
-$route['login'] 							= 'auth/login';
-$route['signup'] 							= 'auth/register';
+	$route['services/(:any)'] 					= 'welcome/services/$1';
+	$route['place-order/(:any)'] 				= 'orders/index/$1';
+	$route['order-history'] 					= 'orders/history';
 
-$route['my-dashboard'] 						= 'home';
-$route['my-profile'] 						= 'profile';
-$route['change-password'] 					= 'profile/change_password';
-$route['my-invoice'] 						= 'profile/invoice';
-$route['my-mail'] 							= 'profile/mail';
-$route['my-statement'] 						= 'profile/statement';
-$route['recharge-voucher'] 					= 'profile/recharge_voucher';
-$route['email-preferences'] 				= 'profile/email_preferences';
-$route['my-tickets'] 						= 'profile/tickets';
-$route['submit-ticket'] 					= 'profile/submit_tickets';
-$route['service-status'] 					= 'profile/service_status';
+	$route['item-details/(:any)/(:any)'] 		= 'welcome/item_details/$1/$2';
+	//-----------------
+	$route['login'] 							= 'auth/login';
+	$route['signup'] 							= 'auth/register';
+
+	$route['my-dashboard'] 						= 'home';
+	$route['my-profile'] 						= 'profile';
+	$route['change-password'] 					= 'profile/change_password';
+	$route['my-invoice'] 						= 'profile/invoice';
+	$route['my-mail'] 							= 'profile/mail';
+	$route['my-statement'] 						= 'profile/statement';
+	$route['recharge-voucher'] 					= 'profile/recharge_voucher';
+	$route['email-preferences'] 				= 'profile/email_preferences';
+	$route['my-tickets'] 						= 'profile/tickets';
+	$route['submit-ticket'] 					= 'profile/submit_tickets';
+	$route['service-status'] 					= 'profile/service_status';
+}

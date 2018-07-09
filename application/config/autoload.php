@@ -60,14 +60,7 @@ $autoload['packages'] = array(APPPATH.'third_party');
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
 
-$autoload['libraries'] = array(
-	'database',
-	'form_validation',
-	'session',
-	'user_agent', 
-	'tank_auth',
-	'template'
-	);
+$autoload['libraries'] = array();
 
 /*
 | -------------------------------------------------------------------
@@ -94,15 +87,7 @@ $autoload['drivers'] = array();
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array(
-	'form',
-	'url',
-	'text',
-	'html', 
-	'download',
-	'file',
-	'string'
-	);
+$autoload['helper'] = array();
 
 /*
 | -------------------------------------------------------------------
@@ -133,7 +118,7 @@ $autoload['config'] = array();
 |
 */
 
-$autoload['language'] = array('tank_auth');
+$autoload['language'] = array();
 
 
 /*
@@ -150,16 +135,4 @@ $autoload['language'] = array('tank_auth');
 |	$autoload['model'] = array('first_model' => 'first');
 */
 
-$autoload['model'] = array(
-	'App_config',
-	'User_list',
-	'Item',
-	'Service',
-	'Category',
-	'Order',
-	'Ticket',
-	'Testimonial',
-	'Country',
-	'Notification',
-	'Source'
-);
+$autoload['model'] = array();

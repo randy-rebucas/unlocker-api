@@ -64,11 +64,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '198.12.154.49',
-	'username' => 'unlocked_ci1',
-	'password' => '%!&}cdbG~,y{',
-	'database' => 'unlocked_ci1',
-	'dbdriver' => 'mysql',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'dhru',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => TRUE,
