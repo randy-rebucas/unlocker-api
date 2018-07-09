@@ -1,0 +1,316 @@
+[22-Jul-2015 00:27:09 UTC] PHP Fatal error:  Call to undefined function mysqli_init() in /home/unlockedzpd/public_html/system/database/drivers/mysqli/mysqli_driver.php on line 126
+[22-Jul-2015 00:27:49 UTC] PHP Fatal error:  Call to undefined function mysqli_init() in /home/unlockedzpd/public_html/system/database/drivers/mysqli/mysqli_driver.php on line 126
+[22-Jul-2015 00:27:51 UTC] PHP Fatal error:  Call to undefined function mysqli_init() in /home/unlockedzpd/public_html/system/database/drivers/mysqli/mysqli_driver.php on line 126
+[23-Jul-2015 08:30:31 UTC] PHP Fatal error:  Call to a member function is_logged_in() on a non-object in /home/unlockedzpd/public_html/application/views/corporate.php on line 89
+[23-Jul-2015 17:48:59 UTC] PHP Fatal error:  Call to a member function get_all() on a non-object in /home/unlockedzpd/public_html/application/hooks/load_config.php on line 7
+[23-Jul-2015 18:07:21 UTC] PHP Fatal error:  Call to undefined method Tank_auth::get_license_key() in /home/unlockedzpd/public_html/application/hooks/Load_config.php on line 26
+[23-Jul-2015 18:09:39 UTC] PHP Fatal error:  Call to a member function get_all() on a non-object in /home/unlockedzpd/public_html/application/hooks/Load_config.php on line 7
+[24-Jul-2015 02:48:24 Asia/Hong_Kong] PHP Fatal error:  Can't use method return value in write context in /home/unlockedzpd/public_html/application/views/corporate/intro.php on line 6
+[24-Jul-2015 02:52:23 Asia/Hong_Kong] PHP Fatal error:  Can't use method return value in write context in /home/unlockedzpd/public_html/application/views/corporate/intro.php on line 6
+[24-Jul-2015 02:53:54 Asia/Hong_Kong] PHP Fatal error:  Can't use method return value in write context in /home/unlockedzpd/public_html/application/views/corporate.php on line 202
+[23-Jul-2015 23:11:01 UTC] PHP Fatal error:  require_once(): Failed opening required 'secure.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/unlockedzpd/public_html/application/controllers/Home.php on line 2
+[27-Jul-2015 04:57:20 Asia/Hong_Kong] PHP Fatal error:  Call to a member function segment() on a non-object in /home/unlockedzpd/public_html/application/views/admin.php on line 559
+[26-Jul-2015 23:40:39 UTC] PHP Fatal error:  Class 'User_list' not found in /home/unlockedzpd/public_html/system/core/Loader.php on line 305
+[27-Jul-2015 07:41:05 Asia/Hong_Kong] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/unlockedzpd/public_html/application/views/admin/user.php on line 36
+[27-Jul-2015 23:24:13 UTC] PHP Fatal error:  Class 'Service' not found in /home/unlockedzpd/public_html/system/core/Loader.php on line 305
+[28-Jul-2015 08:10:33 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/unlockedzpd/public_html/application/views/corporate/services.php on line 43
+[28-Jul-2015 04:47:59 UTC] PHP Fatal error:  Class 'Testimonial' not found in /home/unlockedzpd/public_html/system/core/Loader.php on line 305
+[30-Jul-2015 13:57:42 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '.', expecting variable (T_VARIABLE) or '$' in /home/unlockedzpd/public_html/application/views/corporate/orders_form.php on line 9
+[30-Jul-2015 13:58:23 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '.', expecting variable (T_VARIABLE) or '$' in /home/unlockedzpd/public_html/application/views/corporate/orders_form.php on line 9
+[30-Jul-2015 13:58:56 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '.', expecting variable (T_VARIABLE) or '$' in /home/unlockedzpd/public_html/application/views/corporate/orders_form.php on line 9
+[30-Jul-2015 14:00:27 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '{' in /home/unlockedzpd/public_html/application/views/corporate/orders_form.php on line 23
+[30-Jul-2015 16:32:13 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected ';' in /home/unlockedzpd/public_html/application/views/admin/items.php on line 65
+[30-Jul-2015 21:24:30 Asia/Hong_Kong] PHP Fatal error:  Call to undefined method Order::get_my_order() in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 127
+[02-Aug-2015 03:49:52 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/unlockedzpd/public_html/application/views/corporate/profile.php on line 25
+[01-Aug-2015 20:41:47 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/unlockedzpd/public_html/application/controllers/Profile.php on line 98
+[03-Aug-2015 10:07:49 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}' in /home/unlockedzpd/public_html/application/views/corporate.php on line 289
+[08-Aug-2015 08:22:46 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/unlockedzpd/public_html/application/views/corporate/testimonial.php on line 32
+[14-Aug-2015 08:50:07 Asia/Hong_Kong] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 81 bytes) in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 50
+[14-Aug-2015 08:51:07 Asia/Hong_Kong] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/unlockedzpd/public_html/application/views/admin/orders.php on line 45
+[14-Aug-2015 08:51:37 Asia/Hong_Kong] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/unlockedzpd/public_html/application/views/admin/orders.php on line 45
+[14-Aug-2015 08:51:43 Asia/Hong_Kong] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/unlockedzpd/public_html/application/views/admin/orders.php on line 45
+[14-Aug-2015 08:58:49 Asia/Hong_Kong] PHP Fatal error:  Call to undefined function xmlToArray() in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 49
+[14-Aug-2015 09:00:32 Asia/Hong_Kong] PHP Fatal error:  Call to undefined function xmlToArray() in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 49
+[14-Aug-2015 09:01:11 Asia/Hong_Kong] PHP Fatal error:  Call to a member function getDocNamespaces() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 73
+[14-Aug-2015 09:12:54 Asia/Hong_Kong] PHP Fatal error:  Call to undefined function xmlstr_to_array() in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 52
+[14-Aug-2015 09:13:25 Asia/Hong_Kong] PHP Fatal error:  Call to undefined function domnode_to_array() in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 72
+[14-Aug-2015 09:14:04 Asia/Hong_Kong] PHP Fatal error:  Call to undefined function domnode_to_array() in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 84
+[14-Aug-2015 09:14:10 Asia/Hong_Kong] PHP Fatal error:  Call to undefined function domnode_to_array() in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 84
+[14-Aug-2015 01:48:15 UTC] PHP Fatal error:  Call to a member function item() on a non-object in /home/unlockedzpd/public_html/application/libraries/UnlockBase.php on line 30
+[14-Aug-2015 09:53:00 Asia/Hong_Kong] PHP Fatal error:  Using $this when not in object context in /home/unlockedzpd/public_html/application/libraries/UnlockBase.php on line 87
+[14-Aug-2015 09:53:28 Asia/Hong_Kong] PHP Fatal error:  Call to a member function item() on a non-object in /home/unlockedzpd/public_html/application/libraries/UnlockBase.php on line 87
+[14-Aug-2015 20:48:11 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/unlockedzpd/public_html/application/models/Order.php on line 80
+[15-Aug-2015 21:48:34 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}' in /home/unlockedzpd/public_html/application/views/corporate/orders_history.php on line 90
+[15-Aug-2015 14:25:19 UTC] PHP Fatal error:  Class 'User_list' not found in /home/unlockedzpd/public_html/system/core/Loader.php on line 305
+[15-Aug-2015 14:26:18 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/unlockedzpd/public_html/application/controllers/Payment.php on line 114
+[19-Aug-2015 03:00:36 Asia/Hong_Kong] PHP Fatal error:  Call to undefined method Tank_auth::get_license_key() in /home/unlockedzpd/public_html/application/controllers/Home.php on line 28
+[20-Aug-2015 06:47:12 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}' in /home/unlockedzpd/public_html/application/views/corporate/orders_history.php on line 94
+[21-Aug-2015 08:59:47 Asia/Hong_Kong] PHP Fatal error:  Call to a member function subject() on a non-object in /home/unlockedzpd/public_html/application/libraries/Mail.php on line 11
+[21-Aug-2015 09:01:47 Asia/Hong_Kong] PHP Fatal error:  Call to a member function send_email() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Notifications.php on line 109
+[21-Aug-2015 09:04:07 Asia/Hong_Kong] PHP Fatal error:  Call to a member function send_email() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Notifications.php on line 109
+[23-Aug-2015 08:25:37 Asia/Hong_Kong] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/unlockedzpd/public_html/application/views/corporate/orders_history.php on line 59
+[23-Aug-2015 08:45:22 Asia/Hong_Kong] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/unlockedzpd/public_html/application/views/corporate/orders_history.php on line 59
+[23-Aug-2015 08:45:35 Asia/Hong_Kong] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/unlockedzpd/public_html/application/views/corporate/orders_history.php on line 59
+[23-Aug-2015 11:36:56 Asia/Hong_Kong] PHP Fatal error:  Call to a member function get_all() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 51
+[23-Aug-2015 12:52:20 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 58
+[23-Aug-2015 12:52:32 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 58
+[23-Aug-2015 12:52:35 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 58
+[23-Aug-2015 12:53:39 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 58
+[23-Aug-2015 12:54:34 Asia/Hong_Kong] PHP Fatal error:  Call to a member function saveHTML() on a non-object in /home/unlockedzpd/public_html/application/libraries/DhruFusion.php on line 53
+[23-Aug-2015 14:02:01 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 59
+[23-Aug-2015 14:02:33 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 59
+[23-Aug-2015 14:03:48 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 59
+[23-Aug-2015 14:03:50 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 59
+[23-Aug-2015 14:05:34 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 59
+[23-Aug-2015 14:05:37 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 59
+[23-Aug-2015 14:07:52 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 59
+[23-Aug-2015 14:09:10 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 59
+[23-Aug-2015 14:09:13 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 59
+[23-Aug-2015 14:14:55 Asia/Hong_Kong] PHP Fatal error:  Call to a member function saveHTML() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 67
+[23-Aug-2015 14:19:13 Asia/Hong_Kong] PHP Fatal error:  Call to a member function saveHTML() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 67
+[23-Aug-2015 14:21:02 Asia/Hong_Kong] PHP Fatal error:  Call to a member function saveHTML() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 68
+[23-Aug-2015 14:29:01 Asia/Hong_Kong] PHP Fatal error:  Call to a member function saveHTML() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 68
+[23-Aug-2015 14:33:23 Asia/Hong_Kong] PHP Fatal error:  Call to a member function saveHTML() on a non-object in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 68
+[23-Aug-2015 06:33:49 UTC] PHP Parse error:  syntax error, unexpected '$crul' (T_VARIABLE), expecting ')' in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 69
+[23-Aug-2015 06:35:26 UTC] PHP Parse error:  syntax error, unexpected '$crul' (T_VARIABLE), expecting ')' in /home/unlockedzpd/public_html/application/controllers/admin/Sources.php on line 72
+[23-Aug-2015 17:04:10 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}' in /home/unlockedzpd/public_html/application/views/admin/sources.php on line 79
+[23-Aug-2015 17:04:46 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}' in /home/unlockedzpd/public_html/application/views/admin/sources.php on line 79
+[23-Aug-2015 17:05:22 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}' in /home/unlockedzpd/public_html/application/views/admin/sources.php on line 79
+[23-Aug-2015 18:14:41 Asia/Hong_Kong] PHP Fatal error:  Call to a member function _push_data() on a non-object in /home/unlockedzpd/public_html/application/views/admin/dashboard.php on line 173
+[23-Aug-2015 18:30:42 Asia/Hong_Kong] PHP Fatal error:  Call to undefined method User_list::count_all() in /home/unlockedzpd/public_html/application/views/admin/dashboard.php on line 141
+[23-Aug-2015 20:30:10 Asia/Hong_Kong] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 39
+[23-Aug-2015 22:20:42 Asia/Hong_Kong] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/unlockedzpd/public_html/application/models/Source.php on line 115
+[23-Aug-2015 22:24:34 Asia/Hong_Kong] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/unlockedzpd/public_html/application/models/Source.php on line 115
+[23-Aug-2015 23:39:20 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '$services' (T_VARIABLE) in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 87
+[24-Aug-2015 20:35:23 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}' in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 42
+[24-Aug-2015 22:21:13 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 39
+[24-Aug-2015 22:23:26 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 40
+[24-Aug-2015 22:24:02 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 40
+[24-Aug-2015 22:48:38 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}' in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 42
+[25-Aug-2015 10:18:14 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}' in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 41
+[25-Aug-2015 11:39:21 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 254
+[25-Aug-2015 12:33:28 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 41
+[25-Aug-2015 12:34:43 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected end of file in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 314
+[25-Aug-2015 12:35:14 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected end of file in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 314
+[25-Aug-2015 12:35:28 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected end of file in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 314
+[25-Aug-2015 12:38:27 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected end of file in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 314
+[25-Aug-2015 12:42:54 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected end of file in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 130
+[25-Aug-2015 12:43:29 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected end of file in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 130
+[25-Aug-2015 13:32:38 Asia/Hong_Kong] PHP Fatal error:  Cannot use [] for reading in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 116
+[25-Aug-2015 13:32:50 Asia/Hong_Kong] PHP Fatal error:  Cannot use [] for reading in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 116
+[25-Aug-2015 13:33:32 Asia/Hong_Kong] PHP Fatal error:  Cannot use [] for reading in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 116
+[25-Aug-2015 13:33:43 Asia/Hong_Kong] PHP Fatal error:  Cannot use [] for reading in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 116
+[25-Aug-2015 13:34:29 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected ',' in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 110
+[25-Aug-2015 13:00:57 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[25-Aug-2015 13:00:57 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[25-Aug-2015 13:00:57 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[25-Aug-2015 13:00:57 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 08:50:07 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected 'here' (T_STRING) in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 65
+[26-Aug-2015 08:51:20 Asia/Hong_Kong] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/unlockedzpd/public_html/application/views/errors/html/error_php.php on line 19
+[26-Aug-2015 08:54:38 Asia/Hong_Kong] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/unlockedzpd/public_html/application/views/errors/html/error_php.php on line 1
+[26-Aug-2015 09:18:13 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}' in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 75
+[26-Aug-2015 10:38:01 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 63
+[26-Aug-2015 10:39:36 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 63
+[26-Aug-2015 10:42:01 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 63
+[26-Aug-2015 10:46:01 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '}' in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 88
+[26-Aug-2015 03:22:17 UTC] PHP Fatal error:  Out of memory (allocated 786432) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/Output.php on line 663
+[26-Aug-2015 03:29:44 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 35
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:33:24 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:48:17 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 35
+[26-Aug-2015 03:49:16 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 35
+[26-Aug-2015 03:50:12 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 35
+[26-Aug-2015 03:55:11 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 35
+[26-Aug-2015 03:55:24 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 35
+[26-Aug-2015 03:55:49 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 35
+[26-Aug-2015 03:56:47 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 35
+[26-Aug-2015 03:57:39 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 35
+[26-Aug-2015 03:57:42 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 35
+[26-Aug-2015 03:58:26 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 35
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:58:54 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[26-Aug-2015 03:58:55 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[26-Aug-2015 03:58:55 UTC] PHP Fatal error:  Out of memory (allocated 2359296) (tried to allocate 72 bytes) in /home/unlockedzpd/public_html/system/database/DB.php on line 182
+[26-Aug-2015 03:58:55 UTC] PHP Fatal error:  Out of memory (allocated 2621440) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/libraries/Form_validation.php on line 725
+[26-Aug-2015 12:12:11 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/unlockedzpd/public_html/application/views/admin/remote_services.php on line 30
+[26-Aug-2015 17:07:41 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 61
+[26-Aug-2015 17:09:16 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 61
+[26-Aug-2015 17:15:10 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 61
+[26-Aug-2015 09:21:22 UTC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in /home/unlockedzpd/public_html/application/libraries/DhruFusion.php on line 22
+[26-Aug-2015 17:22:20 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 61
+[26-Aug-2015 17:22:33 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 61
+[26-Aug-2015 17:24:06 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 61
+[26-Aug-2015 17:25:26 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 61
+[26-Aug-2015 17:26:38 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 61
+[26-Aug-2015 17:31:22 Asia/Hong_Kong] PHP Fatal error:  Call to a member function item() on a non-object in /home/unlockedzpd/public_html/application/third_party/DhruFusion.php on line 44
+[26-Aug-2015 17:33:24 Asia/Hong_Kong] PHP Fatal error:  Call to a member function item() on a non-object in /home/unlockedzpd/public_html/application/third_party/DhruFusion.php on line 36
+[26-Aug-2015 17:33:36 Asia/Hong_Kong] PHP Fatal error:  Call to a member function item() on a non-object in /home/unlockedzpd/public_html/application/third_party/DhruFusion.php on line 36
+[26-Aug-2015 18:50:13 Asia/Hong_Kong] PHP Fatal error:  Call to a member function item() on a non-object in /home/unlockedzpd/public_html/application/third_party/DhruFusion.php on line 36
+[27-Aug-2015 00:49:27 Asia/Hong_Kong] PHP Fatal error:  Call to a member function createElement() on a non-object in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 34
+[27-Aug-2015 00:52:43 Asia/Hong_Kong] PHP Fatal error:  Call to a member function createElement() on a non-object in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 34
+[27-Aug-2015 00:59:39 Asia/Hong_Kong] PHP Fatal error:  Call to a member function createElement() on a non-object in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 40
+[27-Aug-2015 01:01:53 Asia/Hong_Kong] PHP Fatal error:  Call to a member function createElement() on a non-object in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 40
+[27-Aug-2015 01:12:29 Asia/Hong_Kong] PHP Fatal error:  Call to a member function action() on a non-object in /home/unlockedzpd/public_html/application/views/admin/dashboard.php on line 263
+[27-Aug-2015 12:52:48 Asia/Hong_Kong] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 79
+[27-Aug-2015 12:53:30 Asia/Hong_Kong] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 79
+[27-Aug-2015 12:57:22 Asia/Hong_Kong] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 79
+[27-Aug-2015 16:40:22 Asia/Hong_Kong] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 79
+[27-Aug-2015 11:07:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/unlockedzpd/public_html/application/models/Item.php on line 109
+[27-Aug-2015 21:05:30 Asia/Hong_Kong] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 79
+[27-Aug-2015 21:06:09 Asia/Hong_Kong] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 79
+[27-Aug-2015 21:06:41 Asia/Hong_Kong] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 79
+[27-Aug-2015 21:06:52 Asia/Hong_Kong] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 79
+[27-Aug-2015 21:07:33 Asia/Hong_Kong] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/unlockedzpd/public_html/application/libraries/Dhrufusionapi.php on line 79
+[27-Aug-2015 21:18:37 Asia/Hong_Kong] PHP Parse error:  syntax error, unexpected '.' in /home/unlockedzpd/public_html/application/views/corporate/orders_form.php on line 7
+[29-Aug-2015 05:21:55 UTC] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE) in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 296
+[29-Aug-2015 05:22:52 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 316
+[29-Aug-2015 05:22:54 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 316
+[29-Aug-2015 05:22:57 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 316
+[29-Aug-2015 05:22:58 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 316
+[29-Aug-2015 13:23:31 Asia/Hong_Kong] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 247
+[29-Aug-2015 13:48:47 Asia/Hong_Kong] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 258
+[29-Aug-2015 13:48:58 Asia/Hong_Kong] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 258
+[30-Aug-2015 04:54:09 UTC] PHP Parse error:  syntax error, unexpected '$table' (T_VARIABLE) in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 145
+[30-Aug-2015 04:55:13 UTC] PHP Parse error:  syntax error, unexpected 'type' (T_STRING) in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 146
+[30-Aug-2015 04:55:15 UTC] PHP Parse error:  syntax error, unexpected 'type' (T_STRING) in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 146
+[30-Aug-2015 04:56:25 UTC] PHP Parse error:  syntax error, unexpected 'type' (T_STRING) in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 154
+[30-Aug-2015 04:56:52 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/unlockedzpd/public_html/application/controllers/admin/Orders.php on line 154
+[31-Aug-2015 06:41:56 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ')' in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 498
+[31-Aug-2015 06:42:26 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ')' in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 498
+[31-Aug-2015 06:42:29 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ')' in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 498
+[31-Aug-2015 09:08:39 UTC] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE) in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 360
+[05-Sep-2015 03:46:45 UTC] PHP Fatal error:  Out of memory (allocated 2621440) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/libraries/Form_validation.php on line 725
+[09-Sep-2015 14:33:56 Asia/Hong_Kong] PHP Fatal error:  Cannot use object of type stdClass as array in /home/unlockedzpd/public_html/application/controllers/Orders.php on line 455
+[16-Sep-2015 11:44:52 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 10240 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 369
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 11:46:22 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 13:06:27 UTC] PHP Fatal error:  Out of memory (allocated 786432) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/compat/password.php on line 208
+[16-Sep-2015 13:06:27 UTC] PHP Fatal error:  Out of memory (allocated 2097152) (tried to allocate 2560 bytes) in /home/unlockedzpd/public_html/system/database/DB_query_builder.php on line 681
+[16-Sep-2015 13:06:27 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/compat/password.php on line 114
+[16-Sep-2015 13:06:28 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 13:06:28 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 13:06:29 UTC] PHP Fatal error:  Out of memory (allocated 1310720) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/controllers/Welcome.php on line 55
+[16-Sep-2015 13:06:29 UTC] PHP Fatal error:  Out of memory (allocated 1310720) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/controllers/Welcome.php on line 55
+[16-Sep-2015 13:06:32 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 13:06:32 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 13:06:33 UTC] PHP Fatal error:  Out of memory (allocated 3145728) (tried to allocate 1280 bytes) in /home/unlockedzpd/public_html/application/models/Item.php on line 135
+[16-Sep-2015 13:06:33 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 13:06:33 UTC] PHP Fatal error:  Out of memory (allocated 1835008) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/database/DB.php on line 80
+[16-Sep-2015 13:06:33 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 13:06:33 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 35
+[16-Sep-2015 13:06:33 UTC] PHP Fatal error:  Out of memory (allocated 1310720) (tried to allocate 15360 bytes) in /home/unlockedzpd/public_html/application/config/mimes.php on line 142
+[16-Sep-2015 13:06:33 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 13:06:33 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 13:06:33 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 13:06:33 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 13:06:33 UTC] PHP Fatal error:  Out of memory (allocated 1572864) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/helpers/string_helper.php on line 234
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 3145728) (tried to allocate 3072 bytes) in /home/unlockedzpd/public_html/application/models/Item.php on line 127
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 3407872) (tried to allocate 3072 bytes) in /home/unlockedzpd/public_html/application/models/Category.php on line 23
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 2621440) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/libraries/Form_validation.php on line 725
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 3407872) (tried to allocate 3072 bytes) in /home/unlockedzpd/public_html/application/models/Category.php on line 16
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 3407872) (tried to allocate 3072 bytes) in /home/unlockedzpd/public_html/application/models/Category.php on line 7
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 3407872) (tried to allocate 3072 bytes) in /home/unlockedzpd/public_html/application/models/Category.php on line 16
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/compat/password.php on line 114
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/Lang.php on line 115
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/Lang.php on line 115
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/Lang.php on line 115
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/Lang.php on line 115
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 786432) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/Output.php on line 663
+[16-Sep-2015 13:06:34 UTC] PHP Fatal error:  Out of memory (allocated 786432) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/compat/standard.php on line 101
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 786432) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/Output.php on line 663
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 3145728) (tried to allocate 1280 bytes) in /home/unlockedzpd/public_html/application/models/Item.php on line 135
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 3145728) (tried to allocate 3072 bytes) in /home/unlockedzpd/public_html/application/models/Item.php on line 127
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 3145728) (tried to allocate 3072 bytes) in /home/unlockedzpd/public_html/application/models/Item.php on line 127
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 3145728) (tried to allocate 3072 bytes) in /home/unlockedzpd/public_html/application/models/Item.php on line 127
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3200 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 1310720) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/helpers/form_helper.php on line 426
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 1572864) (tried to allocate 3072 bytes) in /home/unlockedzpd/public_html/system/helpers/form_helper.php on line 625
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 1572864) (tried to allocate 3072 bytes) in /home/unlockedzpd/public_html/system/helpers/form_helper.php on line 625
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 1572864) (tried to allocate 3072 bytes) in /home/unlockedzpd/public_html/system/helpers/form_helper.php on line 625
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 1572864) (tried to allocate 3072 bytes) in /home/unlockedzpd/public_html/system/helpers/form_helper.php on line 625
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 111
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 2097152) (tried to allocate 1024 bytes) in /home/unlockedzpd/public_html/system/database/DB_query_builder.php on line 2730
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 2097152) (tried to allocate 1024 bytes) in /home/unlockedzpd/public_html/system/database/DB_query_builder.php on line 2730
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 49152 bytes) in /home/unlockedzpd/public_html/system/core/CodeIgniter.php on line 286
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 1835008) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/database/DB.php on line 80
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 1835008) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/system/database/DB.php on line 80
+[16-Sep-2015 13:06:35 UTC] PHP Fatal error:  Out of memory (allocated 1310720) (tried to allocate 12288 bytes) in /home/unlockedzpd/public_html/application/controllers/Welcome.php on line 55

@@ -1,0 +1,21 @@
+/* here you can put your own css to customize and override the theme */
+ul#tiny-nav {
+    left: -110px !important;
+}
+ul#tiny-nav li {
+  margin: 0px !important;
+  padding: 0px !important;
+  text-align: left !important;
+  width: 100%;
+}
+ul#tiny-nav li a {
+  padding: 5px !important;
+}
+ul#tiny-nav li:last-child {
+  background-color: rgb(201, 201, 201);
+  text-align: right !important;
+}
+
+.panel-group {
+    margin-bottom: 10px !important;
+}
