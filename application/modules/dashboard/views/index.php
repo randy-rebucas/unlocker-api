@@ -19,7 +19,7 @@
                 <table class="table no-margin">
                     <tbody>
                         <tr>
-                            <td><a href="<?php echo site_url('patients/form'); ?>"><i class="icon-user"></i><?php echo lang('add_patient'); ?></a></td>
+                            <td><a href="<?php echo site_url('clients/form'); ?>"><i class="icon-user"></i><?php echo lang('add_client'); ?></a></td>
                             <td><a href="javascript:void(0)" class="create-quote"><i class="icon-file-text"></i><?php echo lang('create_quote'); ?></a></td>
                             <td><a href="javascript:void(0)" class="create-invoice"><i class="icon-money"></i><?php echo lang('create_invoice'); ?></a></td>
                             <td><a href="<?php echo site_url('payments/form'); ?>"><i class="icon-credit-card"></i><?php echo lang('enter_payment'); ?></td>
@@ -93,7 +93,7 @@
                             <th style="width: 15%;"><?php echo lang('status'); ?></th>
                             <th style="width: 15%;"><?php echo lang('due_date'); ?></th>
                             <th style="width: 10%;"><?php echo lang('invoice'); ?></th>
-                            <th style="width: 40%;"><?php echo lang('patient'); ?></th>
+                            <th style="width: 40%;"><?php echo lang('client'); ?></th>
                             <th style="text-align: right; width: 15%;"><?php echo lang('balance'); ?></th>
                             <th style="text-align: center; width: 5%;"><?php echo lang('pdf'); ?></th>
                         </tr>
@@ -104,7 +104,7 @@
                                 <td><span class="label <?php echo $invoice_statuses[$invoice->invoice_status_id]['class']; ?>"><?php echo $invoice_statuses[$invoice->invoice_status_id]['label']; ?></span></td>
                                 <td><span class="font-overdue"><?php echo date_from_mysql($invoice->invoice_date_due); ?></span></td>
                                 <td><?php echo anchor('invoices/view/' . $invoice->invoice_id, $invoice->invoice_number); ?></td>
-                                <td><?php echo anchor('clients/view/' . $invoice->patient_id, $invoice->patient_name); ?></td>
+                                <td><?php echo anchor('clients/view/' . $invoice->client_id, $invoice->client_name); ?></td>
                                 <td style="text-align: right;"><?php echo format_currency($invoice->invoice_balance); ?></td>
                                 <td style="text-align: center;"><a href="<?php echo site_url('invoices/generate_pdf/' . $invoice->invoice_id); ?>" title="<?php echo lang('download_pdf'); ?>"><i class="icon-print"></i></a></td>
                             </tr>
@@ -129,7 +129,7 @@
                             <th style="width: 15%;"><?php echo lang('status'); ?></th>
                             <th style="width: 15%;"><?php echo lang('date'); ?></th>
                             <th style="width: 10%;"><?php echo lang('quote'); ?></th>
-                            <th style="width: 40%;"><?php echo lang('patient'); ?></th>
+                            <th style="width: 40%;"><?php echo lang('client'); ?></th>
                             <th style="text-align: right; width: 15%;"><?php echo lang('balance'); ?></th>
                             <th style="text-align: center; width: 5%;"><?php echo lang('pdf'); ?></th>
                         </tr>
@@ -140,7 +140,7 @@
                                 <td><span class="label <?php echo $quote_statuses[$quote->quote_status_id]['class']; ?>"><?php echo $quote_statuses[$quote->quote_status_id]['label']; ?></span></td>
                                 <td><?php echo date_from_mysql($quote->quote_date_created); ?></td>
                                 <td><?php echo anchor('quotes/view/' . $quote->quote_id, $quote->quote_number); ?></td>
-                                <td><?php echo anchor('clients/view/' . $quote->patient_id, $quote->patient_name); ?></td>
+                                <td><?php echo anchor('clients/view/' . $quote->client_id, $quote->client_name); ?></td>
                                 <td style="text-align: right;"><?php echo format_currency($quote->quote_total); ?></td>
                                 <td style="text-align: center;"><a href="<?php echo site_url('quotes/generate_pdf/' . $quote->quote_id); ?>" title="<?php echo lang('download_pdf'); ?>"><i class="icon-print"></i></a></td>
                             </tr>
@@ -165,7 +165,7 @@
                             <th style="width: 15%;"><?php echo lang('status'); ?></th>
                             <th style="width: 15%;"><?php echo lang('due_date'); ?></th>
                             <th style="width: 10%;"><?php echo lang('invoice'); ?></th>
-                            <th style="width: 40%;"><?php echo lang('patient'); ?></th>
+                            <th style="width: 40%;"><?php echo lang('client'); ?></th>
                             <th style="text-align: right; width: 15%;"><?php echo lang('balance'); ?></th>
                             <th style="text-align: center; width: 5%;"><?php echo lang('pdf'); ?></th>
                         </tr>
@@ -176,7 +176,7 @@
                                 <td><span class="label <?php echo $invoice_statuses[$invoice->invoice_status_id]['class']; ?>"><?php echo $invoice_statuses[$invoice->invoice_status_id]['label']; ?></span></td>
                                 <td><span class="<?php if ($invoice->is_overdue) { ?>font-overdue<?php } ?>"><?php echo date_from_mysql($invoice->invoice_date_due); ?></span></td>
                                 <td><?php echo anchor('invoices/view/' . $invoice->invoice_id, $invoice->invoice_number); ?></td>
-                                <td><?php echo anchor('clients/view/' . $invoice->patient_id, $invoice->patient_name); ?></td>
+                                <td><?php echo anchor('clients/view/' . $invoice->client_id, $invoice->client_name); ?></td>
                                 <td style="text-align: right;"><?php echo format_currency($invoice->invoice_balance); ?></td>
                                 <td style="text-align: center;"><a href="<?php echo site_url('invoices/generate_pdf/' . $invoice->invoice_id); ?>" title="<?php echo lang('download_pdf'); ?>"><i class="icon-print"></i></a></td>
                             </tr>

@@ -6,7 +6,7 @@
 	</div>
 	
 	<div class="pull-right">
-		<?php echo pager(site_url('payments/index'), 'Mdl_payments'); ?>
+		<?php echo pager(site_url('payments/index'), 'mdl_payments'); ?>
 	</div>
 
 </div>

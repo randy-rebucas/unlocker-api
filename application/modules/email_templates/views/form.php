@@ -12,14 +12,14 @@
 			<div class="control-group">
 				<label class="control-label"><?php echo lang('title'); ?>: </label>
 				<div class="controls">
-					<input type="text" name="email_template_title" id="email_template_title" value="<?php echo $this->Mdl_email_templates->form_value('email_template_title'); ?>" class="span8">
+					<input type="text" name="email_template_title" id="email_template_title" value="<?php echo $this->mdl_email_templates->form_value('email_template_title'); ?>" class="span8">
 				</div>
 			</div>
 
 			<div class="control-group">
 				<label class="control-label"><?php echo lang('body'); ?>: </label>
 				<div class="controls">
-					<textarea name="email_template_body" id="email_template_body" style="height: 200px;" class="span8"><?php echo $this->Mdl_email_templates->form_value('email_template_body'); ?></textarea>
+					<textarea name="email_template_body" id="email_template_body" style="height: 200px;" class="span8"><?php echo $this->mdl_email_templates->form_value('email_template_body'); ?></textarea>
 				</div>
 			</div>
 

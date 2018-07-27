@@ -25,27 +25,27 @@ class Payment_Handler extends Base_Controller {
         $this->load->library('merchant');
         $this->load->library('encrypt');
 
-        $this->load->model('invoices/Mdl_invoices');
+        $this->load->model('invoices/mdl_invoices');
     }
 
     public function make_payment($invoice_url_key)
     {
         // Attempt to get the invoice
-        $invoice = $this->Mdl_invoices->where('invoice_url_key', $invoice_url_key)->get();
+        $invoice = $this->mdl_invoices->where('invoice_url_key', $invoice_url_key)->get();
 
         if ($invoice->num_rows() == 1)
         {
             $invoice = $invoice->row();
 
             // Load the merchant driver
-            $this->merchant->load($this->Mdl_settings->setting('merchant_driver'));
+            $this->merchant->load($this->mdl_settings->setting('merchant_driver'));
 
             // Pass the required settings
             $settings = array(
-                'username'  => $this->Mdl_settings->setting('merchant_username'),
-                'password'  => $this->encrypt->decode($this->Mdl_settings->setting('merchant_password')),
-                'signature' => $this->Mdl_settings->setting('merchant_signature'),
-                'test_mode' => ($this->Mdl_settings->setting('merchant_test_mode')) ? TRUE : FALSE
+                'username'  => $this->mdl_settings->setting('merchant_username'),
+                'password'  => $this->encrypt->decode($this->mdl_settings->setting('merchant_password')),
+                'signature' => $this->mdl_settings->setting('merchant_signature'),
+                'test_mode' => ($this->mdl_settings->setting('merchant_test_mode')) ? TRUE : FALSE
             );
 
             // Init the driver
@@ -55,7 +55,7 @@ class Payment_Handler extends Base_Controller {
             $params = array(
                 'description' => lang('invoice') . ' #' . $invoice->invoice_number,
                 'amount'      => $invoice->invoice_balance,
-                'currency'    => $this->Mdl_settings->setting('merchant_currency_code'),
+                'currency'    => $this->mdl_settings->setting('merchant_currency_code'),
                 'return_url'  => site_url('guest/payment_handler/payment_return/' . $invoice_url_key . '/r'),
                 'cancel_url'  => site_url('guest/payment_handler/payment_cancel/' . $invoice_url_key . '/c')
             );
@@ -83,23 +83,23 @@ class Payment_Handler extends Base_Controller {
             $this->session->set_flashdata('flash_message', lang('merchant_payment_success'));
 
             // Attempt to get the invoice
-            $invoice = $this->Mdl_invoices->where('invoice_url_key', $invoice_url_key)->get();
+            $invoice = $this->mdl_invoices->where('invoice_url_key', $invoice_url_key)->get();
 
             if ($invoice->num_rows() == 1)
             {
                 $invoice = $invoice->row();
 
                 // Create the payment record
-                $this->load->model('payments/Mdl_payments');
+                $this->load->model('payments/mdl_payments');
 
                 $db_array = array(
                     'invoice_id'        => $invoice->invoice_id,
                     'payment_date'      => date('Y-m-d'),
                     'payment_amount'    => $invoice->invoice_balance,
-                    'payment_method_id' => ($this->Mdl_settings->setting('online_payment_method')) ? $this->Mdl_settings->setting('online_payment_method') : 0
+                    'payment_method_id' => ($this->mdl_settings->setting('online_payment_method')) ? $this->mdl_settings->setting('online_payment_method') : 0
                 );
 
-                $this->Mdl_payments->save(NULL, $db_array);
+                $this->mdl_payments->save(NULL, $db_array);
             }
         }
         else
@@ -127,21 +127,21 @@ class Payment_Handler extends Base_Controller {
     private function payment_validate($invoice_url_key)
     {
         // Attempt to get the invoice
-        $invoice = $this->Mdl_invoices->where('invoice_url_key', $invoice_url_key)->get();
+        $invoice = $this->mdl_invoices->where('invoice_url_key', $invoice_url_key)->get();
 
         if ($invoice->num_rows() == 1)
         {
             $invoice = $invoice->row();
 
             // Load the merchant driver
-            $this->merchant->load($this->Mdl_settings->setting('merchant_driver'));
+            $this->merchant->load($this->mdl_settings->setting('merchant_driver'));
 
             // Pass the required settings
             $settings = array(
-                'username'  => $this->Mdl_settings->setting('merchant_username'),
-                'password'  => $this->encrypt->decode($this->Mdl_settings->setting('merchant_password')),
-                'signature' => $this->Mdl_settings->setting('merchant_signature'),
-                'test_mode' => ($this->Mdl_settings->setting('merchant_test_mode')) ? TRUE : FALSE
+                'username'  => $this->mdl_settings->setting('merchant_username'),
+                'password'  => $this->encrypt->decode($this->mdl_settings->setting('merchant_password')),
+                'signature' => $this->mdl_settings->setting('merchant_signature'),
+                'test_mode' => ($this->mdl_settings->setting('merchant_test_mode')) ? TRUE : FALSE
             );
 
             // Init the driver
@@ -150,7 +150,7 @@ class Payment_Handler extends Base_Controller {
             // Create the parameters
             $params = array(
                 'amount'   => $invoice->invoice_balance,
-                'currency' => $this->Mdl_settings->setting('merchant_currency_code')
+                'currency' => $this->mdl_settings->setting('merchant_currency_code')
             );
 
             // Get the response
@@ -163,7 +163,7 @@ class Payment_Handler extends Base_Controller {
             $db_array = array(
                 'invoice_id'                  => $invoice->invoice_id,
                 'merchant_response_date'      => date('Y-m-d'),
-                'merchant_response_driver'    => $this->Mdl_settings->setting('merchant_driver'),
+                'merchant_response_driver'    => $this->mdl_settings->setting('merchant_driver'),
                 'merchant_response'           => $merchant_response,
                 'merchant_response_reference' => ($response->reference()) ? $response->reference() : ''
             );

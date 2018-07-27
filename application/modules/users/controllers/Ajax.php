@@ -20,62 +20,62 @@ class Ajax extends Admin_Controller {
 
     public $ajax_controller = TRUE;
 
-    public function save_user_patient()
+    public function save_user_client()
     {
         $user_id     = $this->input->post('user_id');
-        $patient_name = $this->input->post('patient_name');
+        $client_name = $this->input->post('client_name');
 
-        $this->load->model('patients/Mdl_patients');
-        $this->load->model('users/Mdl_user_patients');
+        $this->load->model('clients/mdl_clients');
+        $this->load->model('users/mdl_user_clients');
 
-        $patient = $this->Mdl_patients->where('patient_name', $patient_name)->get();
+        $client = $this->mdl_clients->where('client_name', $client_name)->get();
 
-        if ($patient->num_rows() == 1)
+        if ($client->num_rows() == 1)
         {
-            $patient_id = $patient->row()->patient_id;
+            $client_id = $client->row()->client_id;
 
             // Is this a new user or an existing user?
             if ($user_id)
             {
                 // Existing user - go ahead and save the entries
 
-                $user_patient = $this->Mdl_user_patients->where('fi_user_patients.user_id', $user_id)->where('fi_user_patients.patient_id', $patient_id)->get();
+                $user_client = $this->mdl_user_clients->where('fi_user_clients.user_id', $user_id)->where('fi_user_clients.client_id', $client_id)->get();
 
-                if (!$user_patient->num_rows())
+                if (!$user_client->num_rows())
                 {
-                    $this->Mdl_user_patients->save(NULL, array('user_id'   => $user_id, 'patient_id' => $patient_id));
+                    $this->mdl_user_clients->save(NULL, array('user_id'   => $user_id, 'client_id' => $client_id));
                 }
             }
             else
             {
                 // New user - assign the entries to a session variable until user record is saved
-                $user_patients = ($this->session->userdata('user_patients')) ? $this->session->userdata('user_patients') : array();
+                $user_clients = ($this->session->userdata('user_clients')) ? $this->session->userdata('user_clients') : array();
 
-                $user_patients[$patient_id] = $patient_id;
+                $user_clients[$client_id] = $client_id;
 
-                $this->session->set_userdata('user_patients', $user_patients);
+                $this->session->set_userdata('user_clients', $user_clients);
             }
         }
     }
 
-    public function load_user_patient_table()
+    public function load_user_client_table()
     {
-        if ($session_user_patients = $this->session->userdata('user_patients'))
+        if ($session_user_clients = $this->session->userdata('user_clients'))
         {
-            $this->load->model('patients/Mdl_patients');
+            $this->load->model('clients/mdl_clients');
             
             $data = array(
                 'id'           => NULL,
-                'user_patients' => $this->Mdl_patients->where_in('fi_patients.patient_id', $session_user_patients)->get()->result()
+                'user_clients' => $this->mdl_clients->where_in('fi_clients.client_id', $session_user_clients)->get()->result()
             );
         }
         else
         {
-            $this->load->model('users/Mdl_user_patients');
+            $this->load->model('users/mdl_user_clients');
             
             $data = array(
                 'id'           => $this->input->post('user_id'),
-                'user_patients' => $this->Mdl_user_patients->where('fi_user_patients.user_id', $this->input->post('user_id'))->get()->result()
+                'user_clients' => $this->mdl_user_clients->where('fi_user_clients.user_id', $this->input->post('user_id'))->get()->result()
             );
         }
 

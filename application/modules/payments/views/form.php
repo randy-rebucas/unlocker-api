@@ -34,10 +34,10 @@ $(function() {
 						<?php if (!$payment_id) { ?>
 						<option value=""></option>
 						<?php foreach ($open_invoices as $invoice) { ?>
-						<option value="<?php echo $invoice->invoice_id; ?>" <?php if ($this->Mdl_payments->form_value('invoice_id') == $invoice->invoice_id) { ?>selected="selected"<?php } ?>><?php echo $invoice->invoice_number . ' - ' . $invoice->patient_name . ' - ' . format_currency($invoice->invoice_balance); ?></option>
+						<option value="<?php echo $invoice->invoice_id; ?>" <?php if ($this->mdl_payments->form_value('invoice_id') == $invoice->invoice_id) { ?>selected="selected"<?php } ?>><?php echo $invoice->invoice_number . ' - ' . $invoice->client_name . ' - ' . format_currency($invoice->invoice_balance); ?></option>
 						<?php } ?>
 						<?php } else { ?>
-						<option value="<?php echo $payment->invoice_id; ?>"><?php echo $payment->invoice_number . ' - ' . $payment->patient_name . ' - ' . format_currency($payment->invoice_balance); ?></option>
+						<option value="<?php echo $payment->invoice_id; ?>"><?php echo $payment->invoice_number . ' - ' . $payment->client_name . ' - ' . format_currency($payment->invoice_balance); ?></option>
 						<?php } ?>
 					</select>
 				</div>
@@ -46,7 +46,7 @@ $(function() {
 			<div class="control-group">
 				<label class="control-label"><?php echo lang('date'); ?>: </label>
 				<div class="controls input-append date datepicker">
-					<input type="text" name="payment_date" id="payment_date" value="<?php echo date_from_mysql($this->Mdl_payments->form_value('payment_date')); ?>" readonly>
+					<input type="text" name="payment_date" id="payment_date" value="<?php echo date_from_mysql($this->mdl_payments->form_value('payment_date')); ?>" readonly>
 					<span class="add-on"><i class="icon-th"></i></span>
 				</div>
 			</div>
@@ -54,7 +54,7 @@ $(function() {
 			<div class="control-group">
 				<label class="control-label"><?php echo lang('amount'); ?>: </label>
 				<div class="controls">
-					<input type="text" name="payment_amount" id="payment_amount" value="<?php echo format_amount($this->Mdl_payments->form_value('payment_amount')); ?>">
+					<input type="text" name="payment_amount" id="payment_amount" value="<?php echo format_amount($this->mdl_payments->form_value('payment_amount')); ?>">
 				</div>
 			</div>
 
@@ -65,7 +65,7 @@ $(function() {
 					<select name="payment_method_id">
 						<option value="0"></option>
 						<?php foreach ($payment_methods as $payment_method) { ?>
-						<option value="<?php echo $payment_method->payment_method_id; ?>" <?php if ($this->Mdl_payments->form_value('payment_method_id') == $payment_method->payment_method_id) { ?>selected="selected"<?php } ?>>
+						<option value="<?php echo $payment_method->payment_method_id; ?>" <?php if ($this->mdl_payments->form_value('payment_method_id') == $payment_method->payment_method_id) { ?>selected="selected"<?php } ?>>
 							<?php echo $payment_method->payment_method_name; ?>
 						</option>
 						<?php } ?>
@@ -77,7 +77,7 @@ $(function() {
 
 				<label class="control-label"><?php echo lang('note'); ?>: </label>
 				<div class="controls">
-					<textarea name="payment_note"><?php echo $this->Mdl_payments->form_value('payment_note'); ?></textarea>
+					<textarea name="payment_note"><?php echo $this->mdl_payments->form_value('payment_note'); ?></textarea>
 				</div>
 
 			</div>
@@ -86,7 +86,7 @@ $(function() {
             <div class="control-group">
                 <label class="control-label"><?php echo $custom_field->custom_field_label; ?>: </label>
                 <div class="controls">
-                    <input type="text" name="custom[<?php echo $custom_field->custom_field_column; ?>]" id="<?php echo $custom_field->custom_field_column; ?>" value="<?php echo form_prep($this->Mdl_payments->form_value('custom[' . $custom_field->custom_field_column . ']')); ?>">
+                    <input type="text" name="custom[<?php echo $custom_field->custom_field_column; ?>]" id="<?php echo $custom_field->custom_field_column; ?>" value="<?php echo form_prep($this->mdl_payments->form_value('custom[' . $custom_field->custom_field_column . ']')); ?>">
                 </div>
             </div>
             <?php } ?>

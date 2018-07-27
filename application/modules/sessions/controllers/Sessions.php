@@ -20,14 +20,13 @@ class Sessions extends Base_Controller {
 
     public function index()
     {
-        redirect('auth');
+        redirect('sessions/login');
     }
 
     public function login()
     {
         if ($this->input->post('btn_login'))
         {
-            $this->load->library('sessions/my_crypt');
             if ($this->authenticate($this->input->post('email'), $this->input->post('password')))
             {
                 if ($this->session->userdata('user_type') == 1)
@@ -42,7 +41,7 @@ class Sessions extends Base_Controller {
         }
 
         $data = array(
-            'login_logo' => $this->Mdl_settings->setting('login_logo')
+            'login_logo' => $this->mdl_settings->setting('login_logo')
         );
 
         $this->load->view('session_login', $data);
@@ -52,14 +51,14 @@ class Sessions extends Base_Controller {
     {
         $this->session->sess_destroy();
 
-        redirect('auth');
+        redirect('sessions/login');
     }
 
     public function authenticate($email_address, $password)
     {
-        $this->load->model('Mdl_sessions');
+        $this->load->model('mdl_sessions');
 
-        if ($this->Mdl_sessions->auth($email_address, $password))
+        if ($this->mdl_sessions->auth($email_address, $password))
         {
             return TRUE;
         }

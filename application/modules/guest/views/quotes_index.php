@@ -3,7 +3,7 @@
 	<h1><?php echo lang('quotes'); ?></h1>
 
 	<div class="pull-right">
-		<?php echo pager(site_url('guest/quotes/status/' . $this->uri->segment(3)), 'Mdl_quotes'); ?>
+		<?php echo pager(site_url('guest/quotes/status/' . $this->uri->segment(3)), 'mdl_quotes'); ?>
 	</div>
     
 	<div class="pull-right">
@@ -38,7 +38,7 @@
                 <td><a href="<?php echo site_url('guest/quotes/view/' . $quote->quote_id); ?>" title="<?php echo lang('edit'); ?>"><?php echo $quote->quote_number; ?></a></td>
                 <td><?php echo date_from_mysql($quote->quote_date_created); ?></td>
                 <td><?php echo date_from_mysql($quote->quote_date_expires); ?></td>
-                <td><?php echo $quote->patient_name; ?></td>
+                <td><?php echo $quote->client_name; ?></td>
                 <td><?php echo format_currency($quote->quote_total); ?></td>
                 <td>
                     <a href="<?php echo site_url('guest/quotes/view/' . $quote->quote_id); ?>" class="btn btn-small">

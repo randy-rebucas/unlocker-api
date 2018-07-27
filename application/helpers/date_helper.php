@@ -71,7 +71,7 @@ function date_from_mysql($date, $ignore_post_check = FALSE)
             $CI = & get_instance();
 
             $date = DateTime::createFromFormat('Y-m-d', $date);
-            return $date->format($CI->Mdl_settings->setting('date_format'));
+            return $date->format($CI->mdl_settings->setting('date_format'));
         }
         return $date;
     }
@@ -84,14 +84,14 @@ function date_from_timestamp($timestamp)
 
     $date = new DateTime();
     $date->setTimestamp($timestamp);
-    return $date->format($CI->Mdl_settings->setting('date_format'));
+    return $date->format($CI->mdl_settings->setting('date_format'));
 }
 
 function date_to_mysql($date)
 {
     $CI = & get_instance();
 
-    $date = DateTime::createFromFormat($CI->Mdl_settings->setting('date_format'), $date);
+    $date = DateTime::createFromFormat($CI->mdl_settings->setting('date_format'), $date);
     return $date->format('Y-m-d');
 }
 
@@ -99,7 +99,7 @@ function date_format_setting()
 {
     $CI = & get_instance();
 
-    $date_format = $CI->Mdl_settings->setting('date_format');
+    $date_format = $CI->mdl_settings->setting('date_format');
 
     $date_formats = date_formats();
 
@@ -110,7 +110,7 @@ function date_format_datepicker()
 {
     $CI = & get_instance();
 
-    $date_format = $CI->Mdl_settings->setting('date_format');
+    $date_format = $CI->mdl_settings->setting('date_format');
 
     $date_formats = date_formats();
 
@@ -133,7 +133,7 @@ function increment_user_date($date, $increment)
     $new_date = new DateTime($mysql_date);
     $new_date->add(new DateInterval('P' . $increment));
 
-    return $new_date->format($CI->Mdl_settings->setting('date_format'));
+    return $new_date->format($CI->mdl_settings->setting('date_format'));
 }
 
 /**

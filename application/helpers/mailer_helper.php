@@ -20,9 +20,9 @@ function mailer_configured()
 {
     $CI = & get_instance();
 
-    return (($CI->Mdl_settings->setting('email_send_method') == 'phpmail') OR
-        ($CI->Mdl_settings->setting('email_send_method') == 'sendmail') OR
-        (($CI->Mdl_settings->setting('email_send_method') == 'smtp') AND ($CI->Mdl_settings->setting('smtp_server_address')))
+    return (($CI->mdl_settings->setting('email_send_method') == 'phpmail') OR
+        ($CI->mdl_settings->setting('email_send_method') == 'sendmail') OR
+        (($CI->mdl_settings->setting('email_send_method') == 'smtp') AND ($CI->mdl_settings->setting('smtp_server_address')))
         );
 }
 
@@ -37,7 +37,7 @@ function email_invoice($invoice_id, $invoice_template, $from, $to, $subject, $bo
 
     $invoice = generate_invoice_pdf($invoice_id, FALSE, $invoice_template);
 
-    $db_invoice = $CI->Mdl_invoices->where('fi_invoices.invoice_id', $invoice_id)->get()->row();
+    $db_invoice = $CI->mdl_invoices->where('fi_invoices.invoice_id', $invoice_id)->get()->row();
 
     $message = nl2br(parse_template($db_invoice, $body));
 
@@ -54,7 +54,7 @@ function email_quote($quote_id, $quote_template, $from, $to, $subject, $body, $c
 
     $quote = generate_quote_pdf($quote_id, FALSE, $quote_template);
 
-    $db_quote = $CI->Mdl_quotes->where('fi_quotes.quote_id', $quote_id)->get()->row();
+    $db_quote = $CI->mdl_quotes->where('fi_quotes.quote_id', $quote_id)->get()->row();
 
     $message = nl2br(parse_template($db_quote, $body));
 

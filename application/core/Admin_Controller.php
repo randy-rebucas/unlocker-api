@@ -24,3 +24,5 @@ class Admin_Controller extends User_Controller {
 	}
 
 }
+
+?>

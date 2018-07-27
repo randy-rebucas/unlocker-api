@@ -6,7 +6,7 @@
 	</div>
 	
 	<div class="pull-right">
-		<?php echo pager(site_url('custom_fields/index'), 'Mdl_custom_fields'); ?>
+		<?php echo pager(site_url('custom_fields/index'), 'mdl_custom_fields'); ?>
 	</div>
 
 </div>

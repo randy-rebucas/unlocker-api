@@ -27,7 +27,7 @@
     });
 </script>
 
-<?php if (isset($modal_user_patient)) { echo $modal_user_patient; } ?>
+<?php if (isset($modal_user_client)) { echo $modal_user_client; } ?>
 
 <form method="post" class="form-horizontal">
 
@@ -48,14 +48,14 @@
                 <div class="control-group">
                     <label class="control-label"><?php echo lang('name'); ?>: </label>
                     <div class="controls">
-                        <input type="text" name="user_name" id="user_name" value="<?php echo $this->Mdl_users->form_value('user_name'); ?>">
+                        <input type="text" name="user_name" id="user_name" value="<?php echo $this->mdl_users->form_value('user_name'); ?>">
                     </div>
                 </div>
 
                 <div class="control-group">
                     <label class="control-label"><?php echo lang('email_address'); ?>: </label>
                     <div class="controls">
-                        <input type="text" name="user_email" id="user_email" value="<?php echo $this->Mdl_users->form_value('user_email'); ?>">
+                        <input type="text" name="user_email" id="user_email" value="<?php echo $this->mdl_users->form_value('user_email'); ?>">
                     </div>
                 </div>
 
@@ -88,7 +88,7 @@
                         <select name="user_type" id="user_type">
                             <option value=""></option>
                             <?php foreach ($user_types as $key => $type) { ?>
-                            <option value="<?php echo $key; ?>" <?php if ($this->Mdl_users->form_value('user_type') == $key) { ?>selected="selected"<?php } ?>><?php echo $type; ?></option>
+                            <option value="<?php echo $key; ?>" <?php if ($this->mdl_users->form_value('user_type') == $key) { ?>selected="selected"<?php } ?>><?php echo $type; ?></option>
                             <?php } ?>
                         </select>
                     </div>
@@ -103,42 +103,42 @@
                     <div class="control-group">
                         <label class="control-label"><?php echo lang('street_address'); ?>: </label>
                         <div class="controls">
-                            <input type="text" name="user_address_1" id="user_address_1" value="<?php echo $this->Mdl_users->form_value('user_address_1'); ?>">
+                            <input type="text" name="user_address_1" id="user_address_1" value="<?php echo $this->mdl_users->form_value('user_address_1'); ?>">
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label"><?php echo lang('street_address_2'); ?>: </label>
                         <div class="controls">
-                            <input type="text" name="user_address_2" id="user_address_2" value="<?php echo $this->Mdl_users->form_value('user_address_2'); ?>">
+                            <input type="text" name="user_address_2" id="user_address_2" value="<?php echo $this->mdl_users->form_value('user_address_2'); ?>">
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label"><?php echo lang('city'); ?>: </label>
                         <div class="controls">
-                            <input type="text" name="user_city" id="user_city" value="<?php echo $this->Mdl_users->form_value('user_city'); ?>">
+                            <input type="text" name="user_city" id="user_city" value="<?php echo $this->mdl_users->form_value('user_city'); ?>">
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label"><?php echo lang('state'); ?>: </label>
                         <div class="controls">
-                            <input type="text" name="user_state" id="user_state" value="<?php echo $this->Mdl_users->form_value('user_state'); ?>">
+                            <input type="text" name="user_state" id="user_state" value="<?php echo $this->mdl_users->form_value('user_state'); ?>">
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label"><?php echo lang('zip_code'); ?>: </label>
                         <div class="controls">
-                            <input type="text" name="user_zip" id="user_zip" value="<?php echo $this->Mdl_users->form_value('user_zip'); ?>">
+                            <input type="text" name="user_zip" id="user_zip" value="<?php echo $this->mdl_users->form_value('user_zip'); ?>">
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label"><?php echo lang('country'); ?>: </label>
                         <div class="controls">
-                            <input type="text" name="user_country" id="user_country" value="<?php echo $this->Mdl_users->form_value('user_country'); ?>">
+                            <input type="text" name="user_country" id="user_country" value="<?php echo $this->mdl_users->form_value('user_country'); ?>">
                         </div>
                     </div>
                 </fieldset>
@@ -150,28 +150,28 @@
                     <div class="control-group">
                         <label class="control-label"><?php echo lang('phone_number'); ?>: </label>
                         <div class="controls">
-                            <input type="text" name="user_phone" id="user_phone" value="<?php echo $this->Mdl_users->form_value('user_phone'); ?>">
+                            <input type="text" name="user_phone" id="user_phone" value="<?php echo $this->mdl_users->form_value('user_phone'); ?>">
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label"><?php echo lang('fax_number'); ?>: </label>
                         <div class="controls">
-                            <input type="text" name="user_fax" id="user_fax" value="<?php echo $this->Mdl_users->form_value('user_fax'); ?>">
+                            <input type="text" name="user_fax" id="user_fax" value="<?php echo $this->mdl_users->form_value('user_fax'); ?>">
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label"><?php echo lang('mobile_number'); ?>: </label>
                         <div class="controls">
-                            <input type="text" name="user_mobile" id="user_mobile" value="<?php echo $this->Mdl_users->form_value('user_mobile'); ?>">
+                            <input type="text" name="user_mobile" id="user_mobile" value="<?php echo $this->mdl_users->form_value('user_mobile'); ?>">
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label"><?php echo lang('web_address'); ?>: </label>
                         <div class="controls">
-                            <input type="text" name="user_web" id="user_web" value="<?php echo $this->Mdl_users->form_value('user_web'); ?>">
+                            <input type="text" name="user_web" id="user_web" value="<?php echo $this->mdl_users->form_value('user_web'); ?>">
                         </div>
                     </div>
 
@@ -185,7 +185,7 @@
                     <div class="control-group">
                         <label class="control-label"><?php echo $custom_field->custom_field_label; ?>: </label>
                         <div class="controls">
-                            <input type="text" name="custom[<?php echo $custom_field->custom_field_column; ?>]" id="<?php echo $custom_field->custom_field_column; ?>" value="<?php echo form_prep($this->Mdl_users->form_value('custom[' . $custom_field->custom_field_column . ']')); ?>">
+                            <input type="text" name="custom[<?php echo $custom_field->custom_field_column; ?>]" id="<?php echo $custom_field->custom_field_column; ?>" value="<?php echo form_prep($this->mdl_users->form_value('custom[' . $custom_field->custom_field_column . ']')); ?>">
                         </div>
                     </div>
                     <?php } ?>
@@ -205,7 +205,7 @@
                     </div>
                     
                     <div id="div_user_client_table">
-                    <?php echo $user_patient_table; ?>
+                    <?php echo $user_client_table; ?>
                     </div>
 
 				</div>

@@ -2,7 +2,7 @@
 	<h1><?php echo lang('payments'); ?></h1>
 
 	<div class="pull-right">
-		<?php echo pager(site_url('guest/payments/index'), 'Mdl_payments'); ?>
+		<?php echo pager(site_url('guest/payments/index'), 'mdl_payments'); ?>
 	</div>
 
 </div>

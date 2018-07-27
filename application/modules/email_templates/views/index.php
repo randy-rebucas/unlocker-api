@@ -6,7 +6,7 @@
 	</div>
 	
 	<div class="pull-right">
-		<?php echo pager(site_url('email_templates/index'), 'Mdl_email_templates'); ?>
+		<?php echo pager(site_url('email_templates/index'), 'mdl_email_templates'); ?>
 	</div>
 
 </div>

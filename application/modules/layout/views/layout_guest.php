@@ -12,9 +12,9 @@
 		<!-- Use the .htaccess and remove these lines to avoid edge case issues -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>MyClinic</title>
+		<title>FusionInvoice</title>
 		<meta name="description" content="">
-		<meta name="author" content="Randy Rebucas">
+		<meta name="author" content="William G. Rivera">
 
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 

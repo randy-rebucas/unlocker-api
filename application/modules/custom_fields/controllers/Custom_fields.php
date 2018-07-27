@@ -22,13 +22,13 @@ class Custom_Fields extends Admin_Controller {
 	{
 		parent::__construct();
 		
-		$this->load->model('Mdl_custom_fields');
+		$this->load->model('mdl_custom_fields');
 	}
 	
 	public function index($page = 0)
 	{
-        $this->Mdl_custom_fields->paginate(site_url('custom_fields/index'), $page);
-        $custom_fields = $this->Mdl_custom_fields->result();
+        $this->mdl_custom_fields->paginate(site_url('custom_fields/index'), $page);
+        $custom_fields = $this->mdl_custom_fields->result();
         
 		$this->layout->set('custom_fields', $custom_fields);
 		$this->layout->buffer('content', 'custom_fields/index');
@@ -42,28 +42,28 @@ class Custom_Fields extends Admin_Controller {
 			redirect('custom_fields');
 		}
 		
-		if ($this->Mdl_custom_fields->run_validation())
+		if ($this->mdl_custom_fields->run_validation())
 		{
-			$this->Mdl_custom_fields->save($id);
+			$this->mdl_custom_fields->save($id);
 			redirect('custom_fields');
 		}
 		
 		if ($id and !$this->input->post('btn_submit'))
 		{
-			if (!$this->Mdl_custom_fields->prep_form($id))
+			if (!$this->mdl_custom_fields->prep_form($id))
             {
                 show_404();
             }
 		}
 		
-        $this->layout->set('custom_field_tables', $this->Mdl_custom_fields->custom_tables());
+        $this->layout->set('custom_field_tables', $this->mdl_custom_fields->custom_tables());
 		$this->layout->buffer('content', 'custom_fields/form');
 		$this->layout->render();
 	}
 	
 	public function delete($id)
 	{
-		$this->Mdl_custom_fields->delete($id);
+		$this->mdl_custom_fields->delete($id);
 		redirect('custom_fields');
 	}
 

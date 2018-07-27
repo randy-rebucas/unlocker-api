@@ -28,27 +28,27 @@ function phpmail_send($from, $to, $subject, $message, $attachment_path = NULL, $
 	$mail->CharSet	 = 'UTF-8';
 	$mail->IsHtml();
 	
-	switch ($CI->Mdl_settings->setting('email_send_method'))
+	switch ($CI->mdl_settings->setting('email_send_method'))
 	{
 	    case 'smtp':
     	    $mail->IsSMTP();
 
         	// Set the basic properties
-        	$mail->Host		 = $CI->Mdl_settings->setting('smtp_server_address');
-        	$mail->Port		 = $CI->Mdl_settings->setting('smtp_port');
+        	$mail->Host		 = $CI->mdl_settings->setting('smtp_server_address');
+        	$mail->Port		 = $CI->mdl_settings->setting('smtp_port');
     	
         	// Is SMTP authentication required?
-        	if ($CI->Mdl_settings->setting('smtp_authentication'))
+        	if ($CI->mdl_settings->setting('smtp_authentication'))
         	{
         		$mail->SMTPAuth	 = TRUE;
-        		$mail->Username	 = $CI->Mdl_settings->setting('smtp_username');
-        		$mail->Password	 = $CI->encrypt->decode($CI->Mdl_settings->setting('smtp_password'));
+        		$mail->Username	 = $CI->mdl_settings->setting('smtp_username');
+        		$mail->Password	 = $CI->encrypt->decode($CI->mdl_settings->setting('smtp_password'));
         	}
         	
         	// Is a security method required?
-        	if ($CI->Mdl_settings->setting('smtp_security'))
+        	if ($CI->mdl_settings->setting('smtp_security'))
         	{
-        		$mail->SMTPSecure = $CI->Mdl_settings->setting('smtp_security');
+        		$mail->SMTPSecure = $CI->mdl_settings->setting('smtp_security');
         	}
         	
         	break;

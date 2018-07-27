@@ -20,9 +20,9 @@ function invoice_logo()
 {
     $CI = & get_instance();
 	
-    if ($CI->Mdl_settings->setting('invoice_logo'))
+    if ($CI->mdl_settings->setting('invoice_logo'))
     {
-        return '<img src="' . base_url() . 'uploads/' . $CI->Mdl_settings->setting('invoice_logo') . '">';
+        return '<img src="' . base_url() . 'uploads/' . $CI->mdl_settings->setting('invoice_logo') . '">';
     }
     return '';
 }
@@ -31,9 +31,9 @@ function invoice_logo_pdf()
 {
     $CI = & get_instance();
 
-    if ($CI->Mdl_settings->setting('invoice_logo'))
+    if ($CI->mdl_settings->setting('invoice_logo'))
     {
-        return '<img src="' . getcwd() . '/uploads/' . $CI->Mdl_settings->setting('invoice_logo') . '">';
+        return '<img src="' . getcwd() . '/uploads/' . $CI->mdl_settings->setting('invoice_logo') . '">';
     }
     return '';
 }

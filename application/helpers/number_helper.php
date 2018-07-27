@@ -19,10 +19,10 @@ if (!defined('BASEPATH'))
 function format_currency($amount)
 {
     global $CI;
-    $currency_symbol           = $CI->Mdl_settings->setting('currency_symbol');
-    $currency_symbol_placement = $CI->Mdl_settings->setting('currency_symbol_placement');
-    $thousands_separator       = $CI->Mdl_settings->setting('thousands_separator');
-    $decimal_point             = $CI->Mdl_settings->setting('decimal_point');
+    $currency_symbol           = $CI->mdl_settings->setting('currency_symbol');
+    $currency_symbol_placement = $CI->mdl_settings->setting('currency_symbol_placement');
+    $thousands_separator       = $CI->mdl_settings->setting('thousands_separator');
+    $decimal_point             = $CI->mdl_settings->setting('decimal_point');
 
     if ($currency_symbol_placement == 'before')
     {
@@ -39,8 +39,8 @@ function format_amount($amount = NULL)
     if ($amount)
     {
         global $CI;
-        $thousands_separator = $CI->Mdl_settings->setting('thousands_separator');
-        $decimal_point       = $CI->Mdl_settings->setting('decimal_point');
+        $thousands_separator = $CI->mdl_settings->setting('thousands_separator');
+        $decimal_point       = $CI->mdl_settings->setting('decimal_point');
 
         return number_format($amount, ($decimal_point) ? 2 : 0, $decimal_point, $thousands_separator);
     }
@@ -50,8 +50,8 @@ function format_amount($amount = NULL)
 function standardize_amount($amount)
 {
     global $CI;
-    $thousands_separator = $CI->Mdl_settings->setting('thousands_separator');
-    $decimal_point       = $CI->Mdl_settings->setting('decimal_point');
+    $thousands_separator = $CI->mdl_settings->setting('thousands_separator');
+    $decimal_point       = $CI->mdl_settings->setting('decimal_point');
 
     $amount = str_replace($thousands_separator, '', $amount);
     $amount = str_replace($decimal_point, '.', $amount);

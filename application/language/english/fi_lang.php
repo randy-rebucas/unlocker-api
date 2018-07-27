@@ -1,9 +1,9 @@
 <?php
 
 $lang['account_information'] = 'Account Information';
-$lang['active_patient'] = 'Active Patient';
+$lang['active_client'] = 'Active Client';
 $lang['active'] = 'Active';
-$lang['add_patient'] = 'Add Patient';
+$lang['add_client'] = 'Add Client';
 $lang['add_invoice_tax'] = 'Add Invoice Tax';
 $lang['add_item'] = 'Add Item';
 $lang['add_notes'] = 'Add Notes';
@@ -25,11 +25,11 @@ $lang['cannot_select_specified_database'] = 'Cannot select the specified databas
 $lang['cc'] = 'CC';
 $lang['change_password'] = 'Change Password';
 $lang['city'] = 'City';
-$lang['patient_access'] = 'Patient Access';
-$lang['patient_form'] = 'Patient Form';
-$lang['patient_name'] = 'Patient Name';
-$lang['patient'] = 'Patient';
-$lang['patients'] = 'Patients';
+$lang['client_access'] = 'Client Access';
+$lang['client_form'] = 'Client Form';
+$lang['client_name'] = 'Client Name';
+$lang['client'] = 'Client';
+$lang['clients'] = 'Clients';
 $lang['close'] = 'Close';
 $lang['closed'] = 'Closed';
 $lang['contact_information'] = 'Contact Information';
@@ -38,7 +38,6 @@ $lang['copy_invoice'] = 'Copy Invoice';
 $lang['country'] = 'Country';
 $lang['create_invoice'] = 'Create Invoice';
 $lang['create_quote'] = 'Create Quote';
-$lang['create_appointment'] = 'Create Appointment';
 $lang['created'] = 'Created';
 $lang['currency_symbol_placement'] = 'Currency Symbol Placement';
 $lang['currency_symbol'] = 'Currency Symbol';
@@ -58,8 +57,8 @@ $lang['default_item_tax_rate'] = 'Default Item Tax Rate';
 $lang['default_quote_group'] = 'Default Quote Group';
 // $lang['default_quote_template'] = 'Default Quote Template'; - Removed for 1.2.9
 $lang['default_terms'] = 'Default Terms';
-$lang['delete_patient_warning'] = 'If you delete this patient you will also delete any invoices, quotes and payments related to this patient. Are you sure you want to permanently delete this patient?';
-$lang['delete_patient'] = 'Delete Patient';
+$lang['delete_client_warning'] = 'If you delete this client you will also delete any invoices, quotes and payments related to this client. Are you sure you want to permanently delete this client?';
+$lang['delete_client'] = 'Delete Client';
 $lang['delete_invoice_warning'] = 'If you delete this invoice you will not be able to recover it later. Are you sure you want to permanently delete this invoice?';
 $lang['delete_invoice'] = 'Delete Invoice';
 $lang['delete_quote_warning'] = 'If you delete this quote you will not be able to recover it later. Are you sure you want to permanently delete this quote?';
@@ -84,7 +83,7 @@ $lang['expires'] = 'Expires';
 $lang['failure'] = 'Failure';
 $lang['fax_number'] = 'Fax Number';
 $lang['fax'] = 'Fax';
-$lang['filter_patients'] = 'Filter Patients';
+$lang['filter_clients'] = 'Filter Clients';
 $lang['filter_invoices'] = 'Filter Invoices';
 $lang['filter_payments'] = 'Filter Payments';
 $lang['first'] = 'First';
@@ -185,7 +184,7 @@ $lang['quote_to_invoice'] = 'Quote to Invoice';
 $lang['quote'] = 'Quote';
 $lang['quotes_expire_after'] = 'Quotes Expire After (Days)';
 $lang['quotes'] = 'Quotes';
-$lang['recent_patients'] = 'Recent Patients';
+$lang['recent_clients'] = 'Recent Clients';
 $lang['recent_payments'] = 'Recent Payments';
 $lang['record_successfully_created'] = 'Record successfully created';
 $lang['record_successfully_deleted'] = 'Record successfully deleted';
@@ -194,7 +193,7 @@ $lang['remove'] = 'Remove';
 $lang['report_options'] = 'Report Options';
 $lang['reports'] = 'Reports';
 $lang['run_report'] = 'Run Report';
-$lang['sales_by_patient'] = 'Sales by Patient';
+$lang['sales_by_client'] = 'Sales by Client';
 $lang['sales_with_tax'] = 'Sales with Tax';
 $lang['sales'] = 'Sales';
 $lang['save'] = 'Save';
@@ -272,7 +271,7 @@ $lang['username'] = 'Username';
 $lang['users'] = 'Users';
 $lang['verify_password'] = 'Verify Password';
 $lang['version_history'] = 'Version History';
-$lang['view_patients'] = 'View Patients';
+$lang['view_clients'] = 'View Clients';
 $lang['view_invoices'] = 'View Invoices';
 $lang['view_payments'] = 'View Payments';
 $lang['view_quotes'] = 'View Quotes';
@@ -338,7 +337,7 @@ $lang['bill_to'] = 'Bill To';
 
 /** New or changed for 1.2.2 release **/
 $lang['current_version'] = 'Current Version';
-$lang['view_patient'] = 'View Patient';
+$lang['view_client'] = 'View Client';
 
 /** New or changed for 1.2.3 release **/
 $lang['notes'] = 'Notes';
@@ -419,12 +418,4 @@ $lang['view_all'] = 'View All';
 /** New or changed for 1.3.3 tag **/
 $lang['documentation'] = 'Documentation';
 
-
-$lang['appointments'] = 'Appointments';
-$lang['appointments_pending'] = 'Appointment Pending';
-$lang['appointments_approved'] = 'This appointments has been approved';
-$lang['appointments_canceled'] = 'This appointments has been canceled';
-
-$lang['view_doctors'] = 'View Doctor';
-$lang['view_patients'] = 'View Patient';
 ?>

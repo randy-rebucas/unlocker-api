@@ -47,7 +47,7 @@ class Mailer extends Admin_Controller {
 
                 if (email_invoice($invoice_id, $invoice_template, $from, $to, $subject, $body, $cc, $bcc))
                 {
-                    $this->Mdl_invoices->mark_sent($invoice_id);
+                    $this->mdl_invoices->mark_sent($invoice_id);
                     
                     $this->session->set_flashdata('alert_success', lang('email_successfully_sent'));
 
@@ -59,11 +59,11 @@ class Mailer extends Admin_Controller {
                 }
             }
 
-            $this->load->model('invoices/Mdl_templates');
-            $this->load->model('invoices/Mdl_invoices');
-            $this->load->model('email_templates/Mdl_email_templates');
+            $this->load->model('invoices/mdl_templates');
+            $this->load->model('invoices/mdl_invoices');
+            $this->load->model('email_templates/mdl_email_templates');
 
-            $invoice = $this->Mdl_invoices->where('fi_invoices.invoice_id', $invoice_id)->get()->row();
+            $invoice = $this->mdl_invoices->where('fi_invoices.invoice_id', $invoice_id)->get()->row();
             
             $this->load->helper('template');
             $selected_pdf_template = select_pdf_invoice_template($invoice);
@@ -71,7 +71,7 @@ class Mailer extends Admin_Controller {
             
             if ($selected_email_template)
             {
-                $email_template = $this->Mdl_email_templates->where('email_template_id', $selected_email_template)->get();
+                $email_template = $this->mdl_email_templates->where('email_template_id', $selected_email_template)->get();
 
                 if ($email_template->num_rows())
                 {
@@ -89,9 +89,9 @@ class Mailer extends Admin_Controller {
             
             $this->layout->set('selected_pdf_template', $selected_pdf_template);
             $this->layout->set('selected_email_template', $selected_email_template);
-            $this->layout->set('email_templates', $this->Mdl_email_templates->get()->result());
+            $this->layout->set('email_templates', $this->mdl_email_templates->get()->result());
             $this->layout->set('invoice', $invoice);
-            $this->layout->set('invoice_templates', $this->Mdl_templates->get_invoice_templates());
+            $this->layout->set('invoice_templates', $this->mdl_templates->get_invoice_templates());
             $this->layout->buffer('content', 'mailer/invoice');
             $this->layout->render();
         }
@@ -118,7 +118,7 @@ class Mailer extends Admin_Controller {
 
                 if (email_quote($quote_id, $quote_template, $from, $to, $subject, $body, $cc, $bcc))
                 {
-                    $this->Mdl_quotes->mark_sent($quote_id);
+                    $this->mdl_quotes->mark_sent($quote_id);
                     
                     $this->session->set_flashdata('alert_success', lang('email_successfully_sent'));
 
@@ -130,15 +130,15 @@ class Mailer extends Admin_Controller {
                 }
             }
 
-            $this->load->model('invoices/Mdl_templates');
-            $this->load->model('quotes/Mdl_quotes');
-            $this->load->model('email_templates/Mdl_email_templates');
+            $this->load->model('invoices/mdl_templates');
+            $this->load->model('quotes/mdl_quotes');
+            $this->load->model('email_templates/mdl_email_templates');
 
-            $email_template_id = $this->Mdl_settings->setting('default_email_template');
+            $email_template_id = $this->mdl_settings->setting('default_email_template');
 
             if ($email_template_id)
             {
-                $email_template = $this->Mdl_email_templates->where('email_template_id', $email_template_id)->get();
+                $email_template = $this->mdl_email_templates->where('email_template_id', $email_template_id)->get();
 
                 if ($email_template->num_rows())
                 {
@@ -154,9 +154,9 @@ class Mailer extends Admin_Controller {
                 $this->layout->set('body', '');
             }
 
-            $this->layout->set('email_templates', $this->Mdl_email_templates->get()->result());
-            $this->layout->set('quote', $this->Mdl_quotes->where('fi_quotes.quote_id', $quote_id)->get()->row());
-            $this->layout->set('quote_templates', $this->Mdl_templates->get_quote_templates());
+            $this->layout->set('email_templates', $this->mdl_email_templates->get()->result());
+            $this->layout->set('quote', $this->mdl_quotes->where('fi_quotes.quote_id', $quote_id)->get()->row());
+            $this->layout->set('quote_templates', $this->mdl_templates->get_quote_templates());
             $this->layout->buffer('content', 'mailer/quote');
             $this->layout->render();
         }

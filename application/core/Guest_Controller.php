@@ -18,24 +18,24 @@ if (!defined('BASEPATH'))
 
 class Guest_Controller extends User_Controller {
 
-    public $user_patients = array();
+    public $user_clients = array();
 
     public function __construct()
     {
         parent::__construct('user_type', 2);
 
-        $this->load->model('users/Mdl_user_patients');
+        $this->load->model('users/mdl_user_clients');
 
-        $user_patients = $this->Mdl_user_patients->assigned_to($this->session->userdata('user_id'))->get()->result();
+        $user_clients = $this->mdl_user_clients->assigned_to($this->session->userdata('user_id'))->get()->result();
 
-        if (!$user_patients)
+        if (!$user_clients)
         {
             die(lang('guest_account_denied'));
         }
         
-        foreach ($user_patients as $user_patient)
+        foreach ($user_clients as $user_client)
         {
-            $this->user_patients[$user_patient->patient_id] = $user_patient->patient_id;
+            $this->user_clients[$user_client->client_id] = $user_client->client_id;
         }
     }
 

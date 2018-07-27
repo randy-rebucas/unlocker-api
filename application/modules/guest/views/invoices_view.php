@@ -31,21 +31,21 @@
 
 				<div class="pull-left">
 
-					<h2><?php echo $invoice->patient_name; ?></h2><br>
+					<h2><?php echo $invoice->client_name; ?></h2><br>
 					<span>
-						<?php echo ($invoice->patient_address_1) ? $invoice->patient_address_1 . '<br>' : ''; ?>
-						<?php echo ($invoice->patient_address_2) ? $invoice->patient_address_2 . '<br>' : ''; ?>
-						<?php echo ($invoice->patient_city) ? $invoice->patient_city : ''; ?>
-						<?php echo ($invoice->patient_state) ? $invoice->patient_state : ''; ?>
-						<?php echo ($invoice->patient_zip) ? $invoice->patient_zip : ''; ?>
-						<?php echo ($invoice->patient_country) ? '<br>' . $invoice->patient_country : ''; ?>
+						<?php echo ($invoice->client_address_1) ? $invoice->client_address_1 . '<br>' : ''; ?>
+						<?php echo ($invoice->client_address_2) ? $invoice->client_address_2 . '<br>' : ''; ?>
+						<?php echo ($invoice->client_city) ? $invoice->client_city : ''; ?>
+						<?php echo ($invoice->client_state) ? $invoice->client_state : ''; ?>
+						<?php echo ($invoice->client_zip) ? $invoice->client_zip : ''; ?>
+						<?php echo ($invoice->client_country) ? '<br>' . $invoice->client_country : ''; ?>
 					</span>
 					<br><br>
-					<?php if ($invoice->patient_phone) { ?>
-					<span><strong><?php echo lang('phone'); ?>:</strong> <?php echo $invoice->patient_phone; ?></span><br>
+					<?php if ($invoice->client_phone) { ?>
+					<span><strong><?php echo lang('phone'); ?>:</strong> <?php echo $invoice->client_phone; ?></span><br>
 					<?php } ?>
-					<?php if ($invoice->patient_email) { ?>
-					<span><strong><?php echo lang('email'); ?>:</strong> <?php echo $invoice->patient_email; ?></span>
+					<?php if ($invoice->client_email) { ?>
+					<span><strong><?php echo lang('email'); ?>:</strong> <?php echo $invoice->client_email; ?></span>
 					<?php } ?>
 
 				</div>

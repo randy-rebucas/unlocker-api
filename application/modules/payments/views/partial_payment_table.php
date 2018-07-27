@@ -5,7 +5,7 @@
 			<th><?php echo lang('payment_date'); ?></th>
             <th><?php echo lang('invoice_date'); ?></th>
 			<th><?php echo lang('invoice'); ?></th>
-            <th><?php echo lang('patient'); ?></th>
+            <th><?php echo lang('client'); ?></th>
 			<th><?php echo lang('amount'); ?></th>
 			<th><?php echo lang('payment_method'); ?></th>
 			<th><?php echo lang('note'); ?></th>
@@ -19,7 +19,7 @@
 			<td><?php echo date_from_mysql($payment->payment_date); ?></td>
             <td><?php echo date_from_mysql($payment->invoice_date_created); ?></td>
 			<td><?php echo anchor('invoices/view/' . $payment->invoice_id, $payment->invoice_number); ?></td>
-            <td><?php echo $payment->patient_name; ?></td>
+            <td><?php echo $payment->client_name; ?></td>
 			<td><?php echo format_currency($payment->payment_amount); ?></td>
 			<td><?php echo $payment->payment_method_name; ?></td>
 			<td><?php echo $payment->payment_note; ?></td>

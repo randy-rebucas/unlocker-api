@@ -27,21 +27,21 @@
 
             <div class="pull-left">
 
-                <h2><?php echo $quote->patient_name; ?></h2><br>
+                <h2><?php echo $quote->client_name; ?></h2><br>
                 <span>
-                    <?php echo ($quote->patient_address_1) ? $quote->patient_address_1 . '<br>' : ''; ?>
-                    <?php echo ($quote->patient_address_2) ? $quote->patient_address_2 . '<br>' : ''; ?>
-                    <?php echo ($quote->patient_city) ? $quote->patient_city : ''; ?>
-                    <?php echo ($quote->patient_state) ? $quote->patient_state : ''; ?>
-                    <?php echo ($quote->patient_zip) ? $quote->patient_zip : ''; ?>
-                    <?php echo ($quote->patient_country) ? '<br>' . $quote->patient_country : ''; ?>
+                    <?php echo ($quote->client_address_1) ? $quote->client_address_1 . '<br>' : ''; ?>
+                    <?php echo ($quote->client_address_2) ? $quote->client_address_2 . '<br>' : ''; ?>
+                    <?php echo ($quote->client_city) ? $quote->client_city : ''; ?>
+                    <?php echo ($quote->client_state) ? $quote->client_state : ''; ?>
+                    <?php echo ($quote->client_zip) ? $quote->client_zip : ''; ?>
+                    <?php echo ($quote->client_country) ? '<br>' . $quote->client_country : ''; ?>
                 </span>
                 <br><br>
-                <?php if ($quote->patient_phone) { ?>
-                <span><strong><?php echo lang('phone'); ?>:</strong> <?php echo $quote->patient_phone; ?></span><br>
+                <?php if ($quote->client_phone) { ?>
+                <span><strong><?php echo lang('phone'); ?>:</strong> <?php echo $quote->client_phone; ?></span><br>
                 <?php } ?>
-                <?php if ($quote->patient_email) { ?>
-                <span><strong><?php echo lang('email'); ?>:</strong> <?php echo $quote->patient_email; ?></span>
+                <?php if ($quote->client_email) { ?>
+                <span><strong><?php echo lang('email'); ?>:</strong> <?php echo $quote->client_email; ?></span>
                 <?php } ?>
 
             </div>

@@ -12,14 +12,13 @@
 		<!-- Use the .htaccess and remove these lines to avoid edge case issues -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>MyClinic</title>
+		<title>FusionInvoice</title>
 		<meta name="description" content="">
-		<meta name="author" content="Randy Rebucas">
+		<meta name="author" content="William G. Rivera">
 
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/default/css/style.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 		<script src="<?php echo base_url(); ?>assets/default/js/libs/modernizr-2.0.6.js"></script>
 		<script src="<?php echo base_url(); ?>assets/default/js/libs/jquery-1.7.1.min.js"></script>
@@ -43,10 +42,6 @@
                     $('#modal-placeholder').load("<?php echo site_url('quotes/ajax/modal_create_quote'); ?>");
                 });
 				
-				$('.create-appointment').click(function() {
-                    $('#modal-placeholder').load("<?php echo site_url('appointments/ajax/modal_create_appointment'); ?>");
-				});
-				
                 $('#btn_quote_to_invoice').click(function() {
                     quote_id = $(this).data('quote-id');
                     $('#modal-placeholder').load("<?php echo site_url('quotes/ajax/modal_quote_to_invoice'); ?>/" + quote_id);
@@ -62,14 +57,14 @@
                     $('#modal-placeholder').load("<?php echo site_url('quotes/ajax/modal_copy_quote'); ?>", {quote_id: quote_id});
                 });
                 
-                $('.patient-create-invoice').click(function() {
+                $('.client-create-invoice').click(function() {
                     $('#modal-placeholder').load("<?php echo site_url('invoices/ajax/modal_create_invoice'); ?>", {
-                        client_name: $(this).data('patient-name')
+                        client_name: $(this).data('client-name')
                     });
                 });
-                $('.patient-create-quote').click(function() {
+                $('.client-create-quote').click(function() {
                     $('#modal-placeholder').load("<?php echo site_url('quotes/ajax/modal_create_quote'); ?>", {
-                        client_name: $(this).data('patient-name')
+                        client_name: $(this).data('client-name')
                     });
                 });
 				$(document).on('click', '.invoice-add-payment', function() {
@@ -95,12 +90,12 @@
 					<ul class="nav">
 
 						<li><?php echo anchor('dashboard', lang('dashboard')); ?></li>
-						<li><?php echo anchor('appointments', lang('appointments')); ?></li>
+
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo lang('patients'); ?><b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo lang('clients'); ?><b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><?php echo anchor('patients/form', lang('add_patient')); ?></li>
-								<li><?php echo anchor('patients', lang('view_patients')); ?></li>
+								<li><?php echo anchor('clients/form', lang('add_client')); ?></li>
+								<li><?php echo anchor('clients/index', lang('view_clients')); ?></li>
 							</ul>
 						</li>
 
@@ -108,7 +103,7 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo lang('quotes'); ?><b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="#" class="create-quote"><?php echo lang('create_quote'); ?></a></li>
-								<li><?php echo anchor('quotes', lang('view_quotes')); ?></li>
+								<li><?php echo anchor('quotes/index', lang('view_quotes')); ?></li>
 							</ul>
 						</li>
 
@@ -117,7 +112,7 @@
 							<ul class="dropdown-menu">
 								<li><a href="#" class="create-invoice"><?php echo lang('create_invoice'); ?></a></li>
 								<li><?php echo anchor('invoices/index', lang('view_invoices')); ?></li>
-                                <li><?php echo anchor('invoices/recurring', lang('view_recurring_invoices')); ?></li>
+                                <li><?php echo anchor('invoices/recurring/index', lang('view_recurring_invoices')); ?></li>
 							</ul>
 						</li>
 
@@ -125,7 +120,7 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo lang('payments'); ?><b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><?php echo anchor('payments/form', lang('enter_payment')); ?></li>
-								<li><?php echo anchor('payments', lang('view_payments')); ?></li>
+								<li><?php echo anchor('payments/index', lang('view_payments')); ?></li>
 							</ul>
 						</li>
 
@@ -134,7 +129,7 @@
 							<ul class="dropdown-menu">
 								<li><?php echo anchor('reports/invoice_aging', lang('invoice_aging')); ?></li>
 								<li><?php echo anchor('reports/payment_history', lang('payment_history')); ?></li>
-								<li><?php echo anchor('reports/sales_by_patient', lang('sales_by_patient')); ?></li>
+								<li><?php echo anchor('reports/sales_by_client', lang('sales_by_client')); ?></li>
 							</ul>
 						</li>
 
@@ -155,14 +150,14 @@
 						<li class="dropdown">
 							<a href="#" class="tip icon dropdown-toggle" data-toggle="dropdown" data-original-title="<?php echo lang('settings'); ?>" data-placement="bottom"><i class="icon-cog"></i></a>
 							<ul class="dropdown-menu">
-                                <li><?php echo anchor('custom_fields', lang('custom_fields')); ?></li>
-								<li><?php echo anchor('email_templates', lang('email_templates')); ?></li>
+                                <li><?php echo anchor('custom_fields/index', lang('custom_fields')); ?></li>
+								<li><?php echo anchor('email_templates/index', lang('email_templates')); ?></li>
                                 <li><?php echo anchor('import', lang('import_data')); ?></li>
-								<li><?php echo anchor('invoice_groups', lang('invoice_groups')); ?></li>
-                                <li><?php echo anchor('item_lookups', lang('item_lookups')); ?></li>
-								<li><?php echo anchor('payment_methods', lang('payment_methods')); ?></li>
-								<li><?php echo anchor('tax_rates', lang('tax_rates')); ?></li>
-								<li><?php echo anchor('users', lang('user_accounts')); ?></li>
+								<li><?php echo anchor('invoice_groups/index', lang('invoice_groups')); ?></li>
+                                <li><?php echo anchor('item_lookups/index', lang('item_lookups')); ?></li>
+								<li><?php echo anchor('payment_methods/index', lang('payment_methods')); ?></li>
+								<li><?php echo anchor('tax_rates/index', lang('tax_rates')); ?></li>
+								<li><?php echo anchor('users/index', lang('user_accounts')); ?></li>
                                 <li class="divider"></li>
                                 <li><?php echo anchor('settings', lang('system_settings')); ?></li>
 							</ul>
@@ -180,12 +175,11 @@
 		<div class="sidebar">
 
 			<ul>
-				<li><a href="<?php echo site_url('dashboard'); ?>"><i class="fas fa-lg fa-fw fa-home"></i></a></li>
-				<li><a href="<?php echo site_url('appointments'); ?>"><i class="fas fa-lg fa-fw fa-calendar-alt"></i></a></li>
-				<li><a href="<?php echo site_url('patients'); ?>"><i class="fas fa-lg fa-fw fa-user-friends"></i></a></li>
-				<li><a href="<?php echo site_url('quotes'); ?>"><i class="fas fa-lg fa-fw fa-folder"></i></a></li>
-				<li><a href="<?php echo site_url('invoices'); ?>"><i class="fas fa-lg fa-fw fa-file-invoice"></i></a></li>
-				<li><a href="<?php echo site_url('payments'); ?>"><i class="fas fa-lg fa-fw fa-money-bill-alt"></i></a></li>
+				<li><a href="<?php echo site_url('dashboard'); ?>"><img alt="" src="<?php echo base_url(); ?>assets/default/img/icons/dashboard24x24.png" title="<?php echo lang('dashboard'); ?>" /></a></li>
+				<li><a href="<?php echo site_url('clients/index'); ?>"><img alt="" src="<?php echo base_url(); ?>assets/default/img/icons/clients24x24.png" title="<?php echo lang('clients'); ?>" /></a></li>
+				<li><a href="<?php echo site_url('quotes/index'); ?>"><img alt="" src="<?php echo base_url(); ?>assets/default/img/icons/quotes24x24.png" title="<?php echo lang('quotes'); ?>" /></a></li>
+				<li><a href="<?php echo site_url('invoices/index'); ?>"><img alt="" src="<?php echo base_url(); ?>assets/default/img/icons/invoices24x24.png" title="<?php echo lang('invoices'); ?>" /></a></li>
+				<li><a href="<?php echo site_url('payments/index'); ?>"><img alt="" src="<?php echo base_url(); ?>assets/default/img/icons/payments24x24.png" title="<?php echo lang('payments'); ?>" /></a></li>
 			</ul>
 
 		</div>

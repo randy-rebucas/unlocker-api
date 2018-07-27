@@ -22,13 +22,13 @@ class Versions extends Admin_Controller {
 	{
 		parent::__construct();
 		
-		$this->load->model('Mdl_versions');
+		$this->load->model('mdl_versions');
 	}
 	
 	public function index($page = 0)
 	{
         $this->mdl_versions->paginate(site_url('versions/index'), $page);
-        $versions = $this->Mdl_versions->result();
+        $versions = $this->mdl_versions->result();
         
 		$this->layout->set('versions', $versions);
 		$this->layout->buffer('content', 'settings/versions');

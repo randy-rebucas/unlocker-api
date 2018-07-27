@@ -2,7 +2,7 @@
 
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-    require APPPATH.'third_party/MX/Controller.php'; 
+
 /*
  * FusionInvoice
  * 
@@ -24,7 +24,7 @@ class Base_Controller extends MX_Controller {
     {
         parent::__construct();
 
-        $this->config->load('fusion_invoice');
+        $this->config->load('pagination');
 
         // Don't allow non-ajax requests to ajax controllers
         if ($this->ajax_controller and !$this->input->is_ajax_request())
@@ -44,10 +44,10 @@ class Base_Controller extends MX_Controller {
         $this->load->helper('redirect');
 
         // Load setting model and load settings
-        $this->load->model('settings/Mdl_settings');
-        $this->Mdl_settings->load_settings();
+        $this->load->model('settings/mdl_settings');
+        $this->mdl_settings->load_settings();
 
-        $this->lang->load('fi', $this->Mdl_settings->setting('default_language'));
+        $this->lang->load('fi', $this->mdl_settings->setting('default_language'));
 
         $this->load->helper('language');
 

@@ -28,7 +28,7 @@ class Mdl_Payments extends Response_Model {
             SQL_CALC_FOUND_ROWS fi_payment_custom.*,
             fi_payment_methods.*,
             fi_invoice_amounts.*,
-            fi_patients.patient_name,
+            fi_clients.client_name,
             fi_invoices.invoice_number,
             fi_invoices.invoice_date_created,
             fi_payments.*", FALSE);
@@ -42,7 +42,7 @@ class Mdl_Payments extends Response_Model {
     public function default_join()
     {
         $this->db->join('fi_invoices', 'fi_invoices.invoice_id = fi_payments.invoice_id');
-        $this->db->join('fi_patients', 'fi_patients.patient_id = fi_invoices.patient_id');
+        $this->db->join('fi_clients', 'fi_clients.client_id = fi_invoices.client_id');
         $this->db->join('fi_invoice_amounts', 'fi_invoice_amounts.invoice_id = fi_invoices.invoice_id');
         $this->db->join('fi_payment_methods', 'fi_payment_methods.payment_method_id = fi_payments.payment_method_id', 'left');
         $this->db->join('fi_payment_custom', 'fi_payment_custom.payment_id = fi_payments.payment_id', 'left');
@@ -108,8 +108,8 @@ class Mdl_Payments extends Response_Model {
         $id = parent::save($id, $db_array);
 
         // Recalculate invoice amounts
-        $this->load->model('invoices/Mdl_invoice_amounts');
-        $this->Mdl_invoice_amounts->calculate($db_array['invoice_id']);
+        $this->load->model('invoices/mdl_invoice_amounts');
+        $this->mdl_invoice_amounts->calculate($db_array['invoice_id']);
 
         return $id;
     }
@@ -125,8 +125,8 @@ class Mdl_Payments extends Response_Model {
         parent::delete($id);
 
         // Recalculate invoice amounts
-        $this->load->model('invoices/Mdl_invoice_amounts');
-        $this->Mdl_invoice_amounts->calculate($invoice_id);
+        $this->load->model('invoices/mdl_invoice_amounts');
+        $this->mdl_invoice_amounts->calculate($invoice_id);
 
         // Change invoice status back to sent
         $this->db->select('invoice_status_id');

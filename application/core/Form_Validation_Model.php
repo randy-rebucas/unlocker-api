@@ -27,3 +27,5 @@ class Form_Validation_Model extends MY_Model {
     }
     
 }
+
+?>

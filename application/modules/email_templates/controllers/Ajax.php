@@ -22,9 +22,9 @@ class Ajax extends Admin_Controller {
     
     public function get_content()
     {
-        $this->load->model('email_templates/Mdl_email_templates');
+        $this->load->model('email_templates/mdl_email_templates');
         
-        echo $this->Mdl_email_templates->get_by_id($this->input->post('email_template_id'))->email_template_body;
+        echo $this->mdl_email_templates->get_by_id($this->input->post('email_template_id'))->email_template_body;
     }
     
 }

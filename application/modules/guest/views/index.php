@@ -33,7 +33,7 @@
                         <td><a href="<?php echo site_url('guest/invoices/view/' . $invoice->invoice_id); ?>"><?php echo $invoice->invoice_number; ?></a></td>
                         <td><?php echo date_from_mysql($invoice->invoice_date_created); ?></td>
                         <td><span class="font-overdue"><?php echo date_from_mysql($invoice->invoice_date_due); ?></span></td>
-                        <td><?php echo $invoice->ptient_name; ?></td>
+                        <td><?php echo $invoice->client_name; ?></td>
                         <td><?php echo format_currency($invoice->invoice_total); ?></td>
                         <td><?php echo format_currency($invoice->invoice_balance); ?></td>
                         <td>

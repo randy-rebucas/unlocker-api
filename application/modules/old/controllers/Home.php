@@ -29,6 +29,14 @@ class Home extends Secure {
 		$data['total_failed_orders'] = $this->Order->count_all($this->tank_auth->get_user_id(), '3');
 		$data['total_success_orders'] = $this->Order->count_all($this->tank_auth->get_user_id(), '2');
 		
+		// http://codesunlocker.com
+		// edzpd
+		// TII-WO9-1GR-W79-T4B-G9B-4ZF-KEU
+		//--------------
+		// http://markedunlock.com
+		// edzpd
+		// XVT-TZ1-JTX-OL7-PRV-TII-LID-A51
+
 		$default_resource = $this->config->item('dhru_default_resource');
         $config_info = $this->Source->get_info($default_resource);
         $params = array(

@@ -22,14 +22,14 @@ class Payments extends Guest_Controller {
 	{
 		parent::__construct();
 
-		$this->load->model('payments/Mdl_payments');
+		$this->load->model('payments/mdl_payments');
 	}
 
 	public function index($page = 0)
 	{
-        $this->Mdl_payments->where('(fi_payments.invoice_id IN (SELECT invoice_id FROM fi_invoices WHERE patient_id IN (' . implode(',', $this->user_patients) . ')))');
-        $this->Mdl_payments->paginate(site_url('guest/payments/index'), $page);
-        $payments = $this->Mdl_payments->result();
+        $this->mdl_payments->where('(fi_payments.invoice_id IN (SELECT invoice_id FROM fi_invoices WHERE client_id IN (' . implode(',', $this->user_clients) . ')))');
+        $this->mdl_payments->paginate(site_url('guest/payments/index'), $page);
+        $payments = $this->mdl_payments->result();
             
 		$this->layout->set(
 			array(

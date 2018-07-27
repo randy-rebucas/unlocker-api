@@ -51,7 +51,7 @@
         <div class="control-group">
             <label class="control-label"><?php echo lang('to_email'); ?>: </label>
             <div class="controls">
-                <input type="text" name="to_email" id="to_email" value="<?php echo $invoice->patient_email; ?>">
+                <input type="text" name="to_email" id="to_email" value="<?php echo $invoice->client_email; ?>">
             </div>
         </div>
 

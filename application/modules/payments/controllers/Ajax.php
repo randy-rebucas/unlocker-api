@@ -22,11 +22,11 @@ class Ajax extends Admin_Controller {
 
     public function add()
     {
-        $this->load->model('payments/Mdl_payments');
+        $this->load->model('payments/mdl_payments');
 
-        if ($this->Mdl_payments->run_validation())
+        if ($this->mdl_payments->run_validation())
         {
-            $this->Mdl_payments->save();
+            $this->mdl_payments->save();
 
             $response = array(
                 'success' => 1
@@ -47,11 +47,11 @@ class Ajax extends Admin_Controller {
     public function modal_add_payment()
     {
         $this->load->module('layout');
-        $this->load->model('payments/Mdl_payments');
-        $this->load->model('payment_methods/Mdl_payment_methods');
+        $this->load->model('payments/mdl_payments');
+        $this->load->model('payment_methods/mdl_payment_methods');
 
         $data = array(
-            'payment_methods' => $this->Mdl_payment_methods->get()->result(),
+            'payment_methods' => $this->mdl_payment_methods->get()->result(),
             'invoice_id'      => $this->input->post('invoice_id'),
             'invoice_balance' => $this->input->post('invoice_balance')
         );

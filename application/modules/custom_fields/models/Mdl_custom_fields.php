@@ -29,7 +29,7 @@ class Mdl_Custom_Fields extends MY_Model {
     public function custom_tables()
     {
         return array(
-            'fi_patient_custom'  => lang('patient'),
+            'fi_client_custom'  => lang('client'),
             'fi_invoice_custom' => lang('invoice'),
             'fi_payment_custom' => lang('payment'),
             'fi_quote_custom'   => lang('quote'),

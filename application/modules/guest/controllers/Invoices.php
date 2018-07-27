@@ -22,7 +22,7 @@ class Invoices extends Guest_Controller {
     {
         parent::__construct();
 
-        $this->load->model('invoices/Mdl_invoices');
+        $this->load->model('invoices/mdl_invoices');
     }
 
     public function index()
@@ -37,16 +37,16 @@ class Invoices extends Guest_Controller {
         switch ($status)
         {
             case 'paid':
-                $this->Mdl_invoices->is_paid()->where_in('fi_invoices.patient_id', $this->user_patients);
+                $this->mdl_invoices->is_paid()->where_in('fi_invoices.client_id', $this->user_clients);
                 break;
             default:
-                $this->Mdl_invoices->is_open()->where_in('fi_invoices.patient_id', $this->user_patients);
+                $this->mdl_invoices->is_open()->where_in('fi_invoices.client_id', $this->user_clients);
                 break;
 
         }
 
-        $this->Mdl_invoices->paginate(site_url('guest/invoices/status/' . $status), $page);
-        $invoices = $this->Mdl_invoices->result();
+        $this->mdl_invoices->paginate(site_url('guest/invoices/status/' . $status), $page);
+        $invoices = $this->mdl_invoices->result();
 
         $this->layout->set(
             array(
@@ -61,23 +61,23 @@ class Invoices extends Guest_Controller {
 
     public function view($invoice_id)
     {
-        $this->load->model('invoices/Mdl_items');
-        $this->load->model('invoices/Mdl_invoice_tax_rates');
+        $this->load->model('invoices/mdl_items');
+        $this->load->model('invoices/mdl_invoice_tax_rates');
         
-        $invoice = $this->Mdl_invoices->where('fi_invoices.invoice_id', $invoice_id)->where_in('fi_invoices.patient_id', $this->user_patients)->get()->row();
+        $invoice = $this->mdl_invoices->where('fi_invoices.invoice_id', $invoice_id)->where_in('fi_invoices.client_id', $this->user_clients)->get()->row();
         
         if (!$invoice)
         {
             show_404();
         }
         
-        $this->Mdl_invoices->mark_viewed($invoice->invoice_id);
+        $this->mdl_invoices->mark_viewed($invoice->invoice_id);
 
         $this->layout->set(
             array(
                 'invoice'           => $invoice,
-                'items'             => $this->Mdl_items->where('invoice_id', $invoice_id)->get()->result(),
-                'invoice_tax_rates' => $this->Mdl_invoice_tax_rates->where('invoice_id', $invoice_id)->get()->result(),
+                'items'             => $this->mdl_items->where('invoice_id', $invoice_id)->get()->result(),
+                'invoice_tax_rates' => $this->mdl_invoice_tax_rates->where('invoice_id', $invoice_id)->get()->result(),
                 'invoice_id'        => $invoice_id
             )
         );
@@ -95,7 +95,7 @@ class Invoices extends Guest_Controller {
     {
         $this->load->helper('pdf');
         
-        $this->Mdl_invoices->mark_viewed($invoice_id);
+        $this->mdl_invoices->mark_viewed($invoice_id);
         
         generate_invoice_pdf($invoice_id, $stream, $invoice_template);
     }

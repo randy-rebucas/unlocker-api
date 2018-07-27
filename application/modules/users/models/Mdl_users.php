@@ -215,16 +215,16 @@ class Mdl_Users extends Response_Model {
     {
         $id = parent::save($id, $db_array);
 
-        if ($user_patients = $this->session->userdata('user_patients'))
+        if ($user_clients = $this->session->userdata('user_clients'))
         {
-            $this->load->model('users/Mdl_user_patients');
+            $this->load->model('users/mdl_user_clients');
 
-            foreach ($user_patients as $user_patient)
+            foreach ($user_clients as $user_client)
             {
-                $this->Mdl_user_patients->save(NULL, array('user_id'   => $id, 'patient_id' => $user_patient));
+                $this->mdl_user_clients->save(NULL, array('user_id'   => $id, 'client_id' => $user_client));
             }
 
-            $this->session->unset_userdata('user_patients');
+            $this->session->unset_userdata('user_clients');
         }
 
         return $id;
